@@ -1999,9 +1999,8 @@ DAMAGED: 1-4 WOUNDS REMAINING
     Habilidades
   </Text>
   <Text style={styles.descrip}>
-    <Text style={styles.wapo}>Core:</Text>Deadly Demise D3, Deep Strike
-    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
-    {'\n'}<Text style={styles.wapo}>Voluntad de la Mente Colmena:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text>Synapse
+    {'\n'}<Text style={styles.wapo}>Defensive Stance:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
     {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
     {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
   </Text>
