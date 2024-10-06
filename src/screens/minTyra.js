@@ -2000,14 +2000,7 @@ DAMAGED: 1-4 WOUNDS REMAINING
   </Text>
   <Text style={styles.descrip}>
     {'\n'}<Text style={styles.wapo}>Faccion:</Text>Synapse
-    {'\n'}<Text style={styles.wapo}>Defensive Stance:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
-    {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
-    {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
-  </Text>
-
-  {/**Invulnerabilidad */}
-  <Text style={styles.border}>
-    Invulnerable Save    4+
+    {'\n'}<Text style={styles.wapo}>Defensive Stance:</Text>: Cada vez que apuntas a esta unidad con la Estratagema Fuego, mientras se resuelve esa Estratagema, los impactos se obtienen con tiradas para golpear no modificadas de 5+, o tiradas para golpear no modificadas de 4+ si esta unidad está dentro del alcance de un marcador de objetivo.
   </Text>
 
   {/* Cabecera de la tabla daño distancia */}
@@ -2041,22 +2034,50 @@ DAMAGED: 1-4 WOUNDS REMAINING
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Impaler cannon [HEAVY, INDIRECT FIRE]</Text></Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>36"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>D3"</Text>
+        <Text style={styles.cellText}>4"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2+"</Text>
+        <Text style={styles.cellText}>4+"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
+        <Text style={styles.cellText}>5</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Shockcannon [ANTI-VEHICLE 2+]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>36"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>3</Text>
@@ -2090,30 +2111,31 @@ DAMAGED: 1-4 WOUNDS REMAINING
       </View>
     </>
   </View>
+
   {/* Filas de la tabla armas cuerpo a cuerpo */}
   <View style={styles.tableRow}>
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>meele</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>6</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
-      </View>
-      <View style={styles.tableCell}>
         <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
       </View>
     </>
   </View>
@@ -2121,10 +2143,19 @@ DAMAGED: 1-4 WOUNDS REMAINING
 
 {/**Reglas extras */}
 <Text style={styles.border}>
-      Composicion de la min
+opciones de armamento
     </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
+    <Text style={styles.descrip}>
+    ■ Cualquier número de modelos puede tener cada uno su cañón de choque reemplazado por 1 cañón empalador.
+    </Text>
+
+    {/**Reglas extras */}
+<Text style={styles.border}>
+opciones de armamento
+    </Text>
+    <Text style={styles.descrip}>
+
+    </Text>
 
  {/**Composicion de las unidades */}
  <Text style={styles.border}>
