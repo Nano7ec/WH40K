@@ -20,7 +20,8 @@ export default function App() {
          {/* Definir las nuevas pantallas */}
          <Stack.Screen name="Tyranids" component={TyranidsScreen} options={{ title: 'Tyranids' }} />
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
-      
+        <Stack.Screen name='ArmyAdepta' component={ArmyAdeptaScreen} options ={{title: 'Army Adepta Sororitas'}}/>
+        <Stack.Screen name='AdeptaRules' component={AdeptaRulesScreen} options ={{title: 'Adepta Sororitas'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

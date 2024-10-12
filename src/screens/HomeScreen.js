@@ -16,6 +16,11 @@ const HomeScreen = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('ArmyTyranid')}>
         <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
       </TouchableOpacity>
+
+      {/* Imagen que navega a la pantalla ArmyAdepta */}
+      <TouchableOpacity onPress={() => navigation.navigate('ArmyAdepta')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyAdepta.png')} style={styles.image} />
+      </TouchableOpacity>
     </ScrollView>
   );
 };
