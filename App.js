@@ -13,6 +13,8 @@ import ArmyCustodesScreen from './src/screens/ArmyCustodes';
 import CustodesRulesScreen from './src/screens/CustodesRules';
 import ArmyMechanicusScreen from './src/screens/ArmyMechanicus';
 import MechanicusRulesScreen from './src/screens/MechanicusRules';
+import AeldariScreen from './src/screens/ArmyAeldari';
+import AeldariRulesScreen from './src/screens/AeldariRules';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +34,8 @@ export default function App() {
         <Stack.Screen name='CustodesRules' component={CustodesRulesScreen} options ={{title: 'Adeptus Custodes - Shield Host'}}/>
         <Stack.Screen name='ArmyMechanicus' component={ArmyMechanicusScreen} options={{title: 'Adeptus Mechanicus'}}/>
         <Stack.Screen name='MechanicusRules' component={MechanicusRulesScreen} options={{title: 'Adeptus Mechanicus'}}/>
+        <Stack.Screen name='ArmyAeldari' component={AeldariScreen} options={{title: 'Aeldari'}}/>
+        <Stack.Screen name='AeldariRules' component={AeldariRulesScreen} options={{title: 'Aeldari'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
