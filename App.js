@@ -7,6 +7,8 @@ import ArmyTyranidScreen from './src/screens/ArmyTyranid';
 // Importar las nuevas pantallas
 import TyranidsScreen from './src/screens/Tyranids';
 import MinTyraScreen from './src/screens/minTyra';
+import AdeptaRulesScreen from './src/screens/AdeptaRules';
+import ArmyAdeptaScreen from './src/screens/ArmyAdepta';
 
 const Stack = createNativeStackNavigator();
 
