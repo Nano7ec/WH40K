@@ -9,6 +9,8 @@ import TyranidsScreen from './src/screens/Tyranids';
 import MinTyraScreen from './src/screens/minTyra';
 import AdeptaRulesScreen from './src/screens/AdeptaRules';
 import ArmyAdeptaScreen from './src/screens/ArmyAdepta';
+import ArmyCustodesScreen from './src/screens/ArmyCustodes';
+import CustodesRulesScreen from './src/screens/CustodesRules';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +26,8 @@ export default function App() {
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
         <Stack.Screen name='ArmyAdepta' component={ArmyAdeptaScreen} options ={{title: 'Army Adepta Sororitas'}}/>
         <Stack.Screen name='AdeptaRules' component={AdeptaRulesScreen} options ={{title: 'Adepta Sororitas'}}/>
+        <Stack.Screen name='ArmyCustodes' component={ArmyCustodesScreen} options ={{title: 'Custodes'}}/>
+        <Stack.Screen name='CustodesRules' component={CustodesRulesScreen} options ={{title: 'Adepta Sororitas'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

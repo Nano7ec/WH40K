@@ -25,7 +25,7 @@ const AdeptaRulesScreen = () => {
                     Si tu facción del ejército es Adepta Sororitas, obtienes 1 dado de Milagro:
                     {'\n'} ■ Al comienzo de cada turno.
                     {'\n'} ■ Cada vez que una unidad de Adepta Sororitas de tu ejército sea destruida.
-                    Cada vez que obtengas un dado de Milagro, tira un D6. El número que obtengas será el valor de ese dado de Milagro. Este valor no se puede cambiar ni volver a tirar, a menos que una regla indique específicamente lo contrario. Deja tus dados de Milagro a un lado: esta es tu reserva de dados de Milagro.
+                    {'\n'}Cada vez que obtengas un dado de Milagro, tira un D6. El número que obtengas será el valor de ese dado de Milagro. Este valor no se puede cambiar ni volver a tirar, a menos que una regla indique específicamente lo contrario. Deja tus dados de Milagro a un lado: esta es tu reserva de dados de Milagro.
                 </Text>
                 <Text style={styles.subtitle}>
                     REALIZAR UN ACTO DE FE
@@ -40,7 +40,7 @@ const AdeptaRulesScreen = () => {
                     {'\n'} ■ Tirada de salvación
                     {'\n'} ■ Tirada para herir
                 </Text>
-                <Text style={styles.title}>
+                <Text style={styles.maintitle}>
                     REGLA DE DESTACAMENTO
                 </Text>
                 <Text style={styles.desc}>
@@ -62,11 +62,11 @@ const AdeptaRulesScreen = () => {
 
 
 const styles = StyleSheet.create({
-    maintitle: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 28, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 5 },
+    maintitle: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 25, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 5 },
     title: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 20, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 5 },
-    subtitle: { color: '#fff', fontWeight: 'bold', fontStyle: 'italic', backgroundColor: '#2C0069', fontSize: 20, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 5 },
-    desc: { fontSize: 18, backgroundColor: '#C5ACE3', color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 },
-    italicdesc: { fontSize: 18, backgroundColor: '#C5ACE3', fontStyle: 'italic', color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 },
+    subtitle: { color: '#fff', fontWeight: 'bold', fontStyle: 'italic', backgroundColor: '#2C0069', fontSize: 15, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, marginTop: 5 },
+    desc: { fontSize: 15, backgroundColor: '#C5ACE3', color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 },
+    italicdesc: { fontSize: 15, backgroundColor: '#C5ACE3', fontStyle: 'italic', color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 },
     scroll: { flex: 1, backgroundColor: '#E5E6E8', padding: 5 },
 });
 

@@ -1,15 +1,15 @@
 // screens/ArmyAdeptaScreen.js
 import React from 'react';
-import {Image, StyleSheet,Dimensions,View, Pressable } from 'react-native';
+import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native';
 
 const { width } = Dimensions.get('window');
 
-const ArmyAdeptaScreen = ({ navigation }) => {
+const ArmyCustodesScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Pressable onPress={() => navigation.navigate('AdeptaRules')}>
+      <TouchableOpacity onPress={() => navigation.navigate('CustodesRules')}>
         <Image resizeMode="stretch" source={require('../img/reglas.png')} style={styles.image} />
-      </Pressable>
+      </TouchableOpacity>
 
     </View>
   );
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ArmyAdeptaScreen;
+export default ArmyCustodesScreen;
