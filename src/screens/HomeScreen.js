@@ -22,9 +22,14 @@ const HomeScreen = ({ navigation }) => {
         <Image resizeMode="stretch" source={require('../img/ArmyAdepta.png')} style={styles.image} />
       </TouchableOpacity>
 
-      {/* Imagen que navega a la pantalla ArmyAdepta */}
+      {/* Imagen que navega a la pantalla ArmyCustodes */}
       <TouchableOpacity onPress={() => navigation.navigate('ArmyCustodes')}>
         <Image resizeMode="stretch" source={require('../img/ArmyCustodes.png')} style={styles.image} />
+      </TouchableOpacity>
+
+      {/* Imagen que navega a la pantalla ArmyMechanicus */}
+      <TouchableOpacity onPress={() => navigation.navigate('ArmyMechanicus')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyMechanicus.png')} style={styles.image} />
       </TouchableOpacity>
     </ScrollView>
   );
