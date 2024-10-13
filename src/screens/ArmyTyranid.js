@@ -1,6 +1,6 @@
 // screens/ArmyTyranidScreen.js
 import React from 'react';
-import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native';
+import {Pressable, Image, StyleSheet,Dimensions,View } from 'react-native';
 
 const { width } = Dimensions.get('window');
 
@@ -8,14 +8,14 @@ const ArmyTyranidScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('Tyranids')}>
+      <Pressable onPress={() => navigation.navigate('Tyranids')}>
         <Image resizeMode="stretch" source={require('../img/Tyranids.png')} style={styles.image} />
-      </TouchableOpacity>
+      </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyTyranid */}
-      <TouchableOpacity onPress={() => navigation.navigate('minTyra')}>
+      <Pressable onPress={() => navigation.navigate('minTyra')}>
         <Image resizeMode="stretch" source={require('../img/MinT.png')} style={styles.image} />
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 };

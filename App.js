@@ -15,6 +15,8 @@ import ArmyMechanicusScreen from './src/screens/ArmyMechanicus';
 import MechanicusRulesScreen from './src/screens/MechanicusRules';
 import AeldariScreen from './src/screens/ArmyAeldari';
 import AeldariRulesScreen from './src/screens/AeldariRules';
+import BlacktemplarsRulesScreen from './src/screens/BlacktemplarsRules';
+import ArmyBlacktemplarsScreen from './src/screens/ArmyBlacktemplars';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,7 +30,7 @@ export default function App() {
          {/* Definir las nuevas pantallas */}
          <Stack.Screen name="Tyranids" component={TyranidsScreen} options={{ title: 'Tyranids' }} />
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
-        <Stack.Screen name='ArmyAdepta' component={ArmyAdeptaScreen} options ={{title: 'Army Adepta Sororitas'}}/>
+        <Stack.Screen name='ArmyAdepta' component={ArmyAdeptaScreen} options ={{title: 'Adepta Sororitas'}}/>
         <Stack.Screen name='AdeptaRules' component={AdeptaRulesScreen} options ={{title: 'Adepta Sororitas'}}/>
         <Stack.Screen name='ArmyCustodes' component={ArmyCustodesScreen} options ={{title: 'Adeptus Custodes - Shield Host'}}/>
         <Stack.Screen name='CustodesRules' component={CustodesRulesScreen} options ={{title: 'Adeptus Custodes - Shield Host'}}/>
@@ -36,6 +38,8 @@ export default function App() {
         <Stack.Screen name='MechanicusRules' component={MechanicusRulesScreen} options={{title: 'Adeptus Mechanicus'}}/>
         <Stack.Screen name='ArmyAeldari' component={AeldariScreen} options={{title: 'Aeldari'}}/>
         <Stack.Screen name='AeldariRules' component={AeldariRulesScreen} options={{title: 'Aeldari'}}/>
+        <Stack.Screen name='ArmyBlacktemplars' component={ArmyBlacktemplarsScreen} options={{title: 'Blacktemplars - Righteous Crusaders'}}/>
+        <Stack.Screen name='BlacktemplarsRules' component={BlacktemplarsRulesScreen} options={{title: 'Blacktemplars - Righteous Crusaders'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
