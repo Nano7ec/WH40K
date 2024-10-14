@@ -1989,7 +1989,7 @@ DAMAGED: 1-4 WOUNDS REMAINING
   </>
 </>
 
-{/**HiveGuard aun no la inicio*/ }
+{/**HiveGuard*/ }
 <>
   {/**Imagenes */}
   <Image resizeMode="stretch" style={styles.image} source={require('../img/Hiveguard.png')} />
@@ -2003,11 +2003,6 @@ DAMAGED: 1-4 WOUNDS REMAINING
     {'\n'}<Text style={styles.wapo}>Defensive Stance:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
     {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
     {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
-  </Text>
-
-  {/**Invulnerabilidad */}
-  <Text style={styles.border}>
-    Invulnerable Save    4+
   </Text>
 
   {/* Cabecera de la tabla daño distancia */}
@@ -2041,22 +2036,50 @@ DAMAGED: 1-4 WOUNDS REMAINING
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Impaler cannon [HEAVY, INDIRECT FIRE]</Text></Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>36"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>D3"</Text>
+        <Text style={styles.cellText}>4</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2+"</Text>
+        <Text style={styles.cellText}>4+</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
+        <Text style={styles.cellText}>5</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Shockcannon [ANTI-VEHICLE 2+]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>24"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>3</Text>
@@ -2095,25 +2118,25 @@ DAMAGED: 1-4 WOUNDS REMAINING
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>meele</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>6</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
-      </View>
-      <View style={styles.tableCell}>
         <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
       </View>
     </>
   </View>
@@ -2121,19 +2144,19 @@ DAMAGED: 1-4 WOUNDS REMAINING
 
 {/**Reglas extras */}
 <Text style={styles.border}>
-      Composicion de la min
+OPCIONES DE EQUIPO
     </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
+    <Text style={styles.descrip}>
+    ■ Cualquier número de modelos puede tener cada uno su cañón de choque reemplazado por 1 cañón empalador.</Text>
 
  {/**Composicion de las unidades */}
  <Text style={styles.border}>
       Composicion de la min
     </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.
-      {'\n'}10 models .........................................................75 pts
-      {'\n'}20 models ........................................................150 pts
+    <Text style={styles.descrip}>■ 3-6 Guardia Colmena
+    {'\n'}Cada modelo está equipado con: cañón de choque; garras xenos y dientes.
+    {'\n'}3 models ..........................................................100 pts
+    {'\n'}6 models ..........................................................200 pts
       </Text>
 
   </>
@@ -2350,6 +2373,1016 @@ DAMAGED: 1-4 WOUNDS REMAINING
             {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
         </>
       </>
+
+      {/**Hormagunts */}
+      <>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/hormagaunts.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Bounding Leap:</Text> Esta unidad puede declarar una carga en un turno en el que haya avanzado.
+  </Text>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Hormagaunt talons </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-21</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 10-20 Hormagaunts
+    {'\n'}Cada modelo está equipado con: Garras Hormagaunt.</Text>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>
+    10 models .........................................................70 pts
+{'\n'}20 models .......................................................140 pts
+      </Text>
+
+  </>
+</>
+
+{/**  Lictor */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Lictor.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Fights First, Infiltrators, Lone Operative, Stealth
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Feeder Tendrils:</Text> Cada vez que este modelo destruye un 
+    enemigo, ganas 1CP
+    {'\n'}<Text style={styles.wapo}>Pheromone Trail: </Text> Una vez por ronda de combate, puedes apuntar a un modelo con esta habilidad con la Estratagema Entrada Rápida por 0CP. 
+  </Text>
+
+  {/**Invulnerabilidad */}
+  <Text style={styles.border}>
+    Invulnerable Save    5+
+  </Text>
+
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>ictor claws and talons [PRECISION]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Lictor
+    {'\n'}This model is equipped with: Lictor claws and talons.
+      </Text>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>1 model ..............................................................75 pts
+      </Text>
+
+  </>
+</>
+
+{/**Maleceptor */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Maleceptor.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly Demise D3
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
+    {'\n'}<Text style={styles.wapo}>Encephalic Diffusion (Aura, Psychic):</Text> Mientras una unidad enemiga a 6» o menos de esta miniatura, cada vez que una miniatura de esa unidad ataque, resta 1 de la tirada para golpear y, si esa unidad enemiga está por debajo de media fuerza, resta también 1 de la tirada para herir.
+  </Text>
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+  DAMAGED: 1-5 WOUNDS REMAINING
+  </Text>
+  <Text style={styles.descrip}> Mientras a este modelo le queden 1-5 heridas, cada vez que modelo realice un ataque, resta 1 de la tirada para golpear.
+  </Text>
+
+  {/**Invulnerabilidad */}
+  <Text style={styles.border}>
+    Invulnerable Save    4+
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Psychic overload [BLAST, PSYCHIC] </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>18"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D6+3"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>10</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Massive scything talons – strike</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>9</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D6+1</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Massive scything talons – sweep </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Maleceptor 
+      {'\n'}This model is equipped with: psychic overload; massive  scything talons
+{'\n'}1 model ............................................................165 pts</Text>
+
+  </>
+</>
+
+{/**Mawloc */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Mawloc.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text>Synapse
+    {'\n'}<Text style={styles.wapo}>Terror From The Deep: </Text> Cada vez que esta unidad se despliega en el campo de batalla usando la habilidad Golpe profundo, tira un D6 por cada unidad enemiga a 12» o menos de este modelo: con un resultado de 2-4, esa unidad sufre D3 heridas mortales; con un resultado de 5+, esa unidad sufre 3 heridas mortales y debe realizar un chequeo de Conmoción de batalla.
+  </Text>
+{/**Tabla de habilidades */}
+<Text style={styles.border}>
+  DAMAGED: 1-5 WOUNDS REMAINING
+  </Text>
+  <Text style={styles.descrip}> Mientras a este modelo le queden 1-5 heridas, cada vez que modelo realice un ataque, resta 1 de la tirada para golpear.
+  </Text>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Distensible jaw [ANTI-INFANTRY 4+, DEVASTATING WOUNDS, EXTRA ATTACKS]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+    </>
+  </View>
+   {/* Filas de la tabla armas cuerpo a cuerpo */}
+   <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Mawloc scything talons </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>16</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>8</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Mawloc
+      {'\n'}Este modelo está equipado con: mandíbula distensible; garras guadañadoras Mawloc.
+      {'\n'}1 model ............................................................145 pts
+      </Text>
+
+  </>
+</>
+
+{/**MucolidSpores */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/MucolidSpores.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text>Synapse
+    {'\n'}<Text style={styles.wapo}>Bio-minefield: </Text> Las unidades enemigas no pueden iniciar o finalizar un movimiento de Avance a 6» o menos de esta unidad
+    {'\n'}<Text style={styles.wapo}>Floating Death:</Text> Cada vez que una unidad enemiga termine un movimiento a 3« o menos de una miniatura de esta unidad, y cada vez que una miniatura de esta unidad termine un movimiento a 3» o menos de una unidad enemiga, tira un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre D6 heridas mortales. La miniatura de esta unidad que causó esa tirada es destruida.
+  </Text>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1-2 Mucolid Spores
+      {'\n'}Este modelo va equipado con: nada
+      {'\n'}1 model ..............................................................45 pts
+      {'\n'}2 models ............................................................90 pts</Text>
+
+  </>
+</>
+
+{/**Neurogaunts */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Neurogaunts.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text>Synapse
+    {'\n'}<Text style={styles.wapo}>Neurocytes:</Text> Mientras esta unidad esté dentro del Alcance de Sinapsis de tu ejército, tiene la palabra clave Sinapsis.
+  </Text>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1-2 Neurogaunt Nodebeasts*.
+{'\n'}■ 10-20 Neurogaunts
+{'\n'}Cada modelo está equipado con: garras y dientes xenos.
+{'\n'}*Esta unidad solo puede contener 2 Neurogaunt Nodebeasts si contiene 20 Neurogaunts.
+{'\n'}11 models .........................................................45 pts
+{'\n'}22 models .........................................................90 pts
+      </Text>
+
+  </>
+</>
+
+{/**Neurotyrant */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Neurotyrant.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Leader
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
+    {'\n'}<Text style={styles.wapo}>Node Lash (Psychic):</Text> Mientras este modelo lidere una unidad, cada vez unidad, cada vez que un modelo de esa unidad ataque, suma 1 a la tirada para golpear. Si el objetivo está conmocionado, suma también 1 a la tirada para Herir.
+    {'\n'}<Text style={styles.wapo}>Psychic Terror (Psychic): </Text> Si uno o más Neurotiranos de tu ejército están en el campo de batalla cuando desencadenas la Sombra en la Urdimbre, resta 1 del test de Conmoción de batalla que cada unidad enemiga en el campo de batalla debe hacer como resultado.
+    {'\n'}<Text style={styles.wapo}>Synaptic Relays: </Text> En tu fase de Mando, puedes seleccionar hasta dos unidades Tyranids amigas a 12» o menos de la unidad de esta miniatura. Hasta el inicio de tu siguiente fase de Mando, las unidades seleccionadas siempre se consideran a distancia de sinapsis de tu ejército.
+  </Text>
+
+  {/**Invulnerabilidad */}
+  <Text style={styles.border}>
+    Invulnerable Save    4+
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Psychic scream [IGNORES COVER, PSYCHIC, TORRENT]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>18"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2D6"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>N/A</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Neurotyrant claws and lashes</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Neurotyrant
+      {'\n'}grito psíquico; Neurotyrant garras y latigazos.
+      {'\n'}1 model ............................................................105 pts
+      </Text>
+
+      {/**Reglas extras */}
+<Text style={styles.border}>
+      Leader
+    </Text>
+    <Text style={styles.descrip}>
+      {'\n'}Este modelo se puede acoplar a las siguientes unidades:
+      {'\n'}■ Neurogaunts
+      {'\n'}■Guardia Tirana</Text>
+
+
+  </>
+</>
+
+{/**Oldoneye */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Oldoneeye.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Feel No Pain 5+, Leader
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Alpha Leader:</Text> Mientras este modelo lidere una unidad, cada vez que un modelo de esa unidad realice un ataque, puedes repetir la tirada para golpear.
+    {'\n'}<Text style={styles.wapo}>Unstoppable Monster:</Text>  Al inicio de la fase de Mando de cada jugador de cada jugador, este modelo recupera hasta D3 heridas perdidas.
+  </Text>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}> Old One Eye’s claws and talons – strike </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>14</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D6+1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}> Old One Eye’s claws and talons – sweep </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>12</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Old One Eye – Epic Hero
+      {'\n'} Garras y garras del Viejo Tuerto.
+      {'\n'}1 model ............................................................140 pts
+      </Text>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Leader
+    </Text>
+    <Text style={styles.descrip}>Este modelo se puede acoplar a la siguiente unidad:
+      {'\n'}■ Carnifexes
+      </Text>
+
+  </>
+</>
+
+{/**Nombre */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/WingedHiveTyrant.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly Demise D3, Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
+    {'\n'}<Text style={styles.wapo}>Voluntad de la Mente Colmena:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
+    {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
+    {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
+  </Text>
+
+  {/**Invulnerabilidad */}
+  <Text style={styles.border}>
+    Invulnerable Save    4+
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>36"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D3"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2+"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>9</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>9</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+{/**Reglas extras */}
+<Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
+      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
+      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.
+      {'\n'}10 models .........................................................75 pts
+      {'\n'}20 models ........................................................150 pts
+      </Text>
+
+  </>
+</>
+
+
     </ScrollView>
   );
 };
