@@ -1,6 +1,6 @@
 // screens/HomeScreen.js
 import React from 'react';
-import {TouchableOpacity, Image, StyleSheet,Dimensions,ScrollView } from 'react-native';
+import {TouchableOpacity, Image, StyleSheet,Dimensions,ScrollView, Pressable } from 'react-native';
 
 const { width } = Dimensions.get('window');
 
@@ -8,19 +8,19 @@ const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('BasicRule')}>
+      <Pressable onPress={() => navigation.navigate('BasicRule')}>
         <Image resizeMode="stretch" source={require('../img/RuleBasic.png')} style={styles.image} />
-      </TouchableOpacity>
+      </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyTyranid */}
-      <TouchableOpacity onPress={() => navigation.navigate('ArmyTyranid')}>
+      <Pressable onPress={() => navigation.navigate('ArmyTyranid')}>
         <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
-      </TouchableOpacity>
+      </Pressable>
 
       {/* Imagen que navega a la pantalla BloodAngels */}
-      <TouchableOpacity onPress={() => navigation.navigate('BloodAngels')}>
+      <Pressable onPress={() => navigation.navigate('BloodAngels')}>
         <Image resizeMode="stretch" source={require('../img/bloodangels.jpg')} style={styles.image} />
-      </TouchableOpacity>
+      </Pressable>
 
     </ScrollView>
   );
