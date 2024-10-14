@@ -18,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
       </Pressable>
 
       {/* Imagen que navega a la pantalla BloodAngels */}
-      <Pressable onPress={() => navigation.navigate('BloodAngels')}>
+      <Pressable onPress={() => navigation.navigate('ArmyBloodAngels')}>
         <Image resizeMode="stretch" source={require('../img/bloodangels.jpg')} style={styles.image} />
       </Pressable>
 

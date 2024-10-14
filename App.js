@@ -8,6 +8,7 @@ import ArmyTyranidScreen from './src/screens/ArmyTyranid';
 import TyranidsScreen from './src/screens/Tyranids';
 import MinTyraScreen from './src/screens/minTyra';
 import BloodAngelsScreen from './src/screens/BloodAngels';
+import ArmyBloodsAngelsScreen from './src/screens/ArmyBloodAngels';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
          <Stack.Screen name="Tyranids" component={TyranidsScreen} options={{ title: 'Tyranids' }} />
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
         <Stack.Screen name="BloodAngels" component={BloodAngelsScreen} options={{ tittle : 'Blood Angels'}}/>
+        <Stack.Screen name="ArmyBloodAngels" component={ArmyBloodsAngelsScreen} options={{title: 'Army Blood Angels'}}/>
       
       </Stack.Navigator>
     </NavigationContainer>
