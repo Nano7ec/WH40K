@@ -7,8 +7,12 @@ import ArmyTyranidScreen from './src/screens/ArmyTyranid';
 // Importar las nuevas pantallas
 import TyranidsScreen from './src/screens/Tyranids';
 import MinTyraScreen from './src/screens/minTyra';
+//Importar las pantallas de Blood Angels
 import BloodAngelsScreen from './src/screens/BloodAngels';
 import ArmyBloodsAngelsScreen from './src/screens/ArmyBloodAngels';
+import ArmyChaosDaemonsScreen from './src/screens/ArmyChaosDaemons';
+import ChaosDaemonsScreen from './src/screens/ChaosDaemons';
+//Importar las antallas de Chaos Daemons
 
 const Stack = createNativeStackNavigator();
 
@@ -22,9 +26,12 @@ export default function App() {
          {/* Definir las nuevas pantallas */}
          <Stack.Screen name="Tyranids" component={TyranidsScreen} options={{ title: 'Tyranids' }} />
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
+        {/** Definir las nuevas pantallas de Blood Angels */}
         <Stack.Screen name="BloodAngels" component={BloodAngelsScreen} options={{ tittle : 'Blood Angels'}}/>
         <Stack.Screen name="ArmyBloodAngels" component={ArmyBloodsAngelsScreen} options={{title: 'Army Blood Angels'}}/>
-      
+        {/** Definir las pantallas de Chaos Daemons */}
+        <Stack.Screen name='ArmyChaosDaemons' component={ArmyChaosDaemonsScreen} options={{tittle: 'Army Chaos Daemons'}}/>
+        <Stack.Screen name='ChaosDaemons' component={ChaosDaemonsScreen} options={{tittle: 'Chaos Daemons'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

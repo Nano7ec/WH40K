@@ -4,21 +4,21 @@ import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native
 
 const { width } = Dimensions.get('window');
 
-const ArmyBloodsAngelsScreen = ({ navigation }) => {
+const ArmyChaosDaemonsScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('BloodAngels')}>
-        <Image resizeMode="stretch" source={require('../img/armybloodangels.jpeg')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('ChaosDaemons')}>
+        <Image resizeMode="stretch" source={require('../img/armychaosdaemons.jpg')} style={styles.image} />
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: '#ff9f9f', paddingVertical: 0},
+  container: {flex: 1, backgroundColor: '#7d8cc3', paddingVertical: 0},
   image: {width: width, height: 150, borderRadius: 20, marginBottom: 5
   },
 });
 
-export default ArmyBloodsAngelsScreen;
+export default ArmyChaosDaemonsScreen;
