@@ -17,7 +17,7 @@ const ArmyChaosDaemonsScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {flex: 1, backgroundColor: '#7d8cc3', paddingVertical: 0},
-  image: {width: width, height: 150, borderRadius: 20, marginBottom: 5
+  image: {width: width, height: 150, borderRadius: 20, marginBottom: 10
   },
 });
 

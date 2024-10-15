@@ -10,9 +10,9 @@ import MinTyraScreen from './src/screens/minTyra';
 //Importar las pantallas de Blood Angels
 import BloodAngelsScreen from './src/screens/BloodAngels';
 import ArmyBloodsAngelsScreen from './src/screens/ArmyBloodAngels';
+//Importar las antallas de Chaos Daemons
 import ArmyChaosDaemonsScreen from './src/screens/ArmyChaosDaemons';
 import ChaosDaemonsScreen from './src/screens/ChaosDaemons';
-//Importar las antallas de Chaos Daemons
 
 const Stack = createNativeStackNavigator();
 

@@ -26,14 +26,13 @@ const HomeScreen = ({ navigation }) => {
       <Pressable onPress={() => navigation.navigate('ArmyChaosDaemons')}>
         <Image resizeMode="stretch" source={require('../img/armychaosdaemons.jpg')} style={styles.image} />
       </Pressable>
-
     </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {flex: 1, backgroundColor: '#5A756E', paddingVertical: 0},
-  image: {width: width, height: 150, borderRadius: 20, marginBottom: 5
+  image: {width: width, height: 150, borderRadius: 20, marginBottom: 10
   },
 });
 
