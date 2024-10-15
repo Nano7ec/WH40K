@@ -10,9 +10,12 @@ import MinTyraScreen from './src/screens/minTyra';
 //Importar las pantallas de Blood Angels
 import BloodAngelsScreen from './src/screens/BloodAngels';
 import ArmyBloodsAngelsScreen from './src/screens/ArmyBloodAngels';
-//Importar las antallas de Chaos Daemons
+//Importar las pantallas de Chaos Daemons
 import ArmyChaosDaemonsScreen from './src/screens/ArmyChaosDaemons';
 import ChaosDaemonsScreen from './src/screens/ChaosDaemons';
+//Importar las pabtallas de Chaos Knight
+import ArmyChaosKnightScreen from './src/screens/ArmyChaosKnight';
+import ChaosKnightScreen from './src/screens/ChaosKnight';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +35,9 @@ export default function App() {
         {/** Definir las pantallas de Chaos Daemons */}
         <Stack.Screen name='ArmyChaosDaemons' component={ArmyChaosDaemonsScreen} options={{tittle: 'Army Chaos Daemons'}}/>
         <Stack.Screen name='ChaosDaemons' component={ChaosDaemonsScreen} options={{tittle: 'Chaos Daemons'}}/>
+        {/** Definir las pantallas de Chaos Knight */}
+        <Stack.Screen name='ArmyChaosKnight' component={ArmyChaosKnightScreen} options={{tittle:'Army Chaos Knights'}}/>
+        <Stack.Screen name='ChaosKnights' component={ChaosKnightScreen} options={{tittle:'Chaos Knights'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

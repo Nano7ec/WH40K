@@ -3,7 +3,7 @@ import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native
 
 const { width } = Dimensions.get('window');
 
-const ArmyChaosDaemonsScreen = ({ navigation }) => {
+const ArmyChaosKnightScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ArmyChaosDaemonsScreen;
+export default ArmyChaosKnightScreen;
