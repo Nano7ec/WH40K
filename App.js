@@ -17,6 +17,10 @@ import AeldariScreen from './src/screens/ArmyAeldari';
 import AeldariRulesScreen from './src/screens/AeldariRules';
 import BlacktemplarsRulesScreen from './src/screens/BlacktemplarsRules';
 import ArmyBlacktemplarsScreen from './src/screens/ArmyBlacktemplars';
+import ArmyWorldEatersScreen from './src/screens/ArmyWorldEaters';
+import WorldEatersRulesScreen from './src/screens/WorldEatersRules';
+import ArmyThousandSonsScreen from './src/screens/ArmyThousandSons';
+import ThousandSonsRulesScreen from './src/screens/ThousandSonsRules';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +44,11 @@ export default function App() {
         <Stack.Screen name='AeldariRules' component={AeldariRulesScreen} options={{title: 'Aeldari'}}/>
         <Stack.Screen name='ArmyBlacktemplars' component={ArmyBlacktemplarsScreen} options={{title: 'Blacktemplars - Righteous Crusaders'}}/>
         <Stack.Screen name='BlacktemplarsRules' component={BlacktemplarsRulesScreen} options={{title: 'Blacktemplars - Righteous Crusaders'}}/>
+        <Stack.Screen name='ArmyWorldEaters' component={ArmyWorldEatersScreen} options={{title: 'World Eaters'}}/>
+        <Stack.Screen name='WorldEatersRules' component={WorldEatersRulesScreen} options={{title: 'World Eaters'}}/>
+        <Stack.Screen name='ArmyThousandSons' component={ArmyThousandSonsScreen} options={{title: 'World Eaters'}}/>
+        <Stack.Screen name='ThousandSonsRules' component={ThousandSonsRulesScreen} options={{title: 'World Eaters'}}/>
+  
       </Stack.Navigator>
     </NavigationContainer>
   );

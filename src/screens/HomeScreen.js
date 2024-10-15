@@ -41,6 +41,17 @@ const HomeScreen = ({ navigation }) => {
       <Pressable onPress={() => navigation.navigate('ArmyBlacktemplars')}>
         <Image resizeMode="stretch" source={require('../img/ArmyBlacktemplars.png')} style={styles.image} />
       </Pressable>
+
+      {/* Imagen que navega a la pantalla ArmyWorldEaters */}
+      <Pressable onPress={() => navigation.navigate('ArmyWorldEaters')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyWorldEaters.png')} style={styles.image} />
+      </Pressable>
+
+      {/* Imagen que navega a la pantalla ArmyThousandSons */}
+      <Pressable onPress={() => navigation.navigate('ArmyThousandSons')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyThousandSons.png')} style={styles.image} />
+      </Pressable>
+
     </ScrollView>
   );
 };
