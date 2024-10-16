@@ -16,7 +16,18 @@ const HomeScreen = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('ArmyTyranid')}>
         <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
       </TouchableOpacity>
-
+      {/**Army necrons */}
+      <TouchableOpacity onPress={() => navigation.navigate('ArmyNecrons')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
+      </TouchableOpacity>
+      {/**ArmyGreyK*/}
+      <TouchableOpacity onPress={() => navigation.navigate('ArmyGreyK')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
+      </TouchableOpacity>
+       {/**ArmySpaceMarine*/}
+       <TouchableOpacity onPress={() => navigation.navigate('ArmySpaceMarine')}>
+        <Image resizeMode="stretch" source={require('../img/ArmyTyrand.png')} style={styles.image} />
+      </TouchableOpacity>
     </ScrollView>
   );
 };

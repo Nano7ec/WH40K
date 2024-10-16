@@ -11,6 +11,12 @@ import MinTyraScreen from './src/screens/minTyra';
 import ArmyNecronsScreen  from './src/screens/ArmyNecrons';
 import NecronsScreen from './src/screens/Necrons';
 import MinNecronsScreen from './src/screens/minNecrons';
+// GreyK
+import ArmyGreyScreen from './src/screens/ArmyGreyK';
+import GreyKScren from './src/screens/GreyK';
+//Space marine
+import ArmySpaceMarineScreen from './src/screens/ArmySpaceMarine';
+import SpaceMarines from './src/screens/SpaceMarine';
 
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +35,12 @@ export default function App() {
         <Stack.Screen name="ArmyNecrons" component={ArmyNecronsScreen} options={{ title: 'Army Necrons' }} />
         <Stack.Screen name="Necrons" component={NecronsScreen} options={{ title: 'Necrons' }} />
         <Stack.Screen name="minNecrons" component={MinNecronsScreen} options={{ title: 'Min Necrons' }} />
+        {/**GreyK*/}
+        <Stack.Screen name="ArmyGreyK" component={ArmyGreyScreen} options={{ title: 'Army GreyK' }} />
+        <Stack.Screen name="GreyK" component={GreyKScren} options={{title:'Grey Knight'}}/>
+        {/**Space Marine */}
+        <Stack.Screen name="ArmySpaceMarine" component={ArmySpaceMarineScreen} options={{ title: 'Space marine' }} />
+        <Stack.Screen name="SpaceMarine" component={SpaceMarines} options={{ title: 'Space marine' }} />
       
       </Stack.Navigator>
     </NavigationContainer>
