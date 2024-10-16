@@ -7,15 +7,15 @@ const ArmyChaosKnightScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('ChaosDaemons')}>
-        <Image resizeMode="stretch" source={require('../img/armychaosdaemons.jpg')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('ChaosKnight')}>
+        <Image resizeMode="stretch" source={require('../img/armychaosknight.jpg')} style={styles.image} />
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: '#7d8cc3', paddingVertical: 0},
+  container: {flex: 1, backgroundColor: '#e0d2c4', paddingVertical: 0},
   image: {width: width, height: 150, borderRadius: 20, marginBottom: 10
   },
 });

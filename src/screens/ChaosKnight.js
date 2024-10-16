@@ -4,200 +4,155 @@ import { View } from 'react-native-web';
 
 const ChaosKnightScreen = () => {
     return(
-        <ScrollView style={{ flex: 1, backgroundColor: '#7d8cc3', padding: 7}}>
-            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>Demonios del caos
+        <ScrollView style={{ flex: 1, backgroundColor: '#c7b4a5', padding: 7}}>
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>CABALLEROS DEL CAOS
+                {"\n"}<Text style={{textTransform: 'uppercase', fontSize:20,fontStyle:'italic'}}>REGLAS DEL EJÉRCITO</Text>
             </Text>
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            Cuando los demonios irrumpen en el espacio real, torbellinos de energía del vórtice se derraman a su paso. La emoción manifestada y las fuerzas desatadas y pesadillescas retuercen todo lo que tocan, remodelando el paisaje en formas extrañas mientras atormentan a los seres mortales hasta la locura. Estar atrapado en tales tempestades es soportar condiciones completamente anáthemas a las leyes fundamentales de la realidad, provocando un terror primal incluso en los guerreros más impasibles.
+            <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+            Donde los Caballeros del Caos pisan, los cielos se oscurecen de forma antinatural y el temor del warp impregna el campo de batalla. Nadie es inmune a su toque sombrío, ya que aquellos que no quedan paralizados por el miedo y la desesperación son atormentados con alucinaciones y llevados a la locura.
             </Text>
-            {/** ARMY RULE/ DEMONIO DEL CAOS */}
+            {/** ARMY RULE/ CABALLEROS DEL CAOS*/}
             <br/>
-           {/** ------------------------------------ 1 ------------------------------------ */}
-           <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>La sombra del caos
+            {/** ------------------------------------ 1 ------------------------------------ */}
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>HARBINGERS DEL MIEDO
             </Text>
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Si la Facción de tu Ejército es Legiones Daemónicas, ciertas áreas del campo de batalla se consideran dentro de la Sombra del Caos de tu ejército, de la siguiente manera:
+            <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
+            Si tu facción de ejército es Chaos Knights, cada modelo de tu ejército con esta habilidad obtiene un bono dependiendo de las habilidades activas de miedo en tu ejército (ver abajo). Una vez que una habilidad de miedo esté activa para tu ejército, esa habilidad se aplicará hasta el final de la batalla.
             </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Tu zona de despliegue siempre está dentro de la Sombra del Caos de tu ejército.
+            {"\n"} <Text style={{textTransform: 'uppercase',fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
+            ■ RONDA DE BATALLA 1 EN ADELANTE
             </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivos dentro de Tierra de Nadie, hasta el final de esa fase, Tierra de Nadie estará dentro de la Sombra del Caos de tu ejército.
+            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
+            Desde la primera ronda de batalla en adelante, la habilidad Desesperación estará activa para tu ejército:
+            {"\n"} <Text style={{fontStyle:'italic', fontWeight: 'bold', textTransform: 'uppercase', fontSize:19}}>DESESPERACIÓN (AURA)</Text>
+            {"\n"} Mientras una unidad enemiga esté dentro de <Text style={{fontStyle: 'italic'}}>12"</Text> de este modelo, cada vez que esa unidad enemiga realice una prueba de <Text style={{fontStyle:'italic'}}>Battle-shock</Text> o de liderazgo, resta 1 a la prueba.
             </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            ■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivos dentro de la zona de despliegue de tu oponente, hasta el final de esa fase, la zona de despliegue de tu oponente estará dentro de la Sombra del Caos de tu ejército.
+            {"\n"} <Text style={{textTransform: 'uppercase',fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
+            ■ RONDA DE BATALLA 3 EN ADELANTE
             </Text>
-            {/**SOMBRA DEL CAOS */}
+            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+            Desde la tercera ronda de batalla en adelante, la habilidad Doom y Oscuridad estará activa para tu ejército:
+            {"\n"} <Text style={{fontStyle:'italic', fontWeight: 'bold', textTransform: 'uppercase', fontSize:19}}>DOOM Y OSCURIDAD
+            </Text>
+            {"\n"} ► Cada vez que este modelo realice un ataque, si el objetivo está bajo los efectos de <Text style={{fontStyle:'italic'}}>Battle-shock</Text>, suma 1 al resultado de Herida.
+            {"\n"} ► Cada vez que un ataque apunte a este modelo, si la unidad que ataca está bajo los efectos de <Text style={{fontStyle:'italic'}}>Battle-shock</Text>, resta 1 a la tirada de Impacto.
+            </Text>
+            {/** HARBINGERS DEL MIEDO*/}
             <br/>
-            <Text style={{ fontStyle: 'italic',fontWeight: 'bold',fontSize: 20, backgroundColor: '#3b3d5e', color: '#fff', textTransform: 'uppercase', textAlign: 'center',borderTopLeftRadius: 10, borderTopRightRadius: 10}}>
-            Manifestacion demoniaca
-            </Text>
-            {"\n"} <Text style={{ontSize: 18, backgroundColor: '#3b3d5e', color: '#fff',paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            Mientras una unidad de Legiones Daemónicas de tu ejército esté dentro de la Sombra del Caos de tu ejército, cada vez que esa unidad realice una prueba de Choque de Batalla, suma 1 a esa prueba y, si la prueba se supera, una miniatura en esa unidad recupera hasta D3 heridas perdidas (si esa unidad es una unidad de Línea de Batalla y se supera la prueba, en su lugar pueden devolverse hasta D3 miniaturas destruidas a esa unidad).
-            </Text>
-            {/**MANIFESTACION DEMONIACA */}
+           { /**------------------------------------ 2 ------------------------------------  */}
+           <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>CAMINANTE SUPERPESADO
+           </Text>
+            <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+            Cada vez que un modelo con esta habilidad realice un movimiento Normal, Avance o Retroceso, puede moverse sobre modelos (excluyendo modelos Titanic) y elementos del terreno que tengan 4" o menos de altura como si no estuvieran allí.
+            </Text> {/** CAMINANTE SUPER PESADO */}
             <br/>
-            <Text style={{ fontStyle: 'italic',fontWeight: 'bold',fontSize: 20, backgroundColor: '#3b3d5e', color: '#fff', textTransform: 'uppercase', textAlign: 'center',borderTopLeftRadius: 10, borderTopRightRadius: 10}}>
-            TERROR DAEMÓNICO
-            </Text>
-            {"\n"} <Text style={{ontSize: 18, backgroundColor: '#3b3d5e', color: '#fff',paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            Mientras una unidad enemiga esté dentro de la Sombra del Caos de tu ejército, cada vez que esa unidad realice una prueba de conmoción (Battle-shock), resta 1 a esa prueba y, si la prueba falla, esa unidad enemiga sufre D3 heridas mortales.
-            </Text>
-            {/**TERROR DAEMÓNICO */}
+            { /**------------------------------------ 3 ------------------------------------  */}
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>CABALLEROS MALDITOS (DREADBLADES)
+           </Text>
+            <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+            Los Dreadblades a menudo vagan por la galaxia, tallando un camino de destrucción y masacrando enemigos junto a otras fuerzas del Caos cuando les place.
+            {"\n"} Si cada modelo en tu ejército tiene la palabra clave <Text style={{fontStyle: 'italic'}}>Chaos</Text>, puedes incluir un modelo Titanic Chaos Knight o hasta 3 modelos War Dog en tu ejército, incluso si no tienen la palabra clave de Facción que seleccionaste en el paso de Selección de Facción de Ejército. Ninguno de estos modelos puede ser tu Señor de la Guerra, y no se les puede otorgar mejoras.
+            </Text> {/** CABALLEROS MALDITOS (DREADBLADES) */}
             <br/>
-            {/** ------------------------------------ 2 ------------------------------------ */}
-            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>Pacto demoniaco
-            </Text>
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Cuando los siervos mortales de los Dioses Oscuros marchan a la guerra, los más favorecidos pueden encontrarse acompañados por entidades demoníacas.
-            </Text>
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Si todas las miniaturas de tu ejército tienen la palabra clave Caos, puedes incluir unidades de Legiones Daemónicas en tu ejército, incluso si no tienen la palabra clave de Facción que seleccionaste en el paso de Selección de Facción del Ejército. El costo combinado en puntos de dichas unidades que puedes incluir depende del tamaño de tu batalla, como se muestra a continuación.
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Incursión - Hasta 250 pts
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Fuerza de Combate - Hasta 500 pts
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Embate - Hasta 750 pts
-            </Text>
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Ninguno de estos modelos puede ser tu Señor de la Guerra, y no pueden recibir Mejoras. Además:
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Si la Facción de tu Ejército es Devoradores de Mundos, solo puedes incluir unidades de Legiones Daemónicas de Khorne utilizando estas reglas.
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Si la Facción de tu Ejército es Mil Hijos, solo puedes incluir unidades de Legiones Daemónicas de Tzeentch utilizando estas reglas.
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            ■ Si la Facción de tu Ejército es Guardia de la Muerte, solo puedes incluir unidades de Legiones Daemónicas de Nurgle utilizando estas reglas.
-            </Text>
-            {"\n"} <Text style={{fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            ■ Si tu Señor de la Guerra es Lucius el Eterno, solo puedes incluir unidades de Legiones Daemónicas de Slaanesh utilizando estas reglas.
-            </Text>
-            {/**PACTO DEMONIACO */}
+            {/**------------------------------- REGLA DEL DESTACAMENTO ------------------------------- */}
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>CABALLEROS DEL CAOS – TRAITORIS LANCE
+                {"\n"} <Text style={{fontSize:20,fontStyle:'italic', textTransform: 'uppercase'}}>REGLA DEL DESTACAMENTO</Text>
+           </Text>
+           <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+           <Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase'}}>FORJADO EN EL TERROR (AURA)</Text>
+           {"\n"}Los Caballeros del Caos son sirvientes de la sombra y el terror; dondequiera que caminen, el miedo y la locura se extienden.
+           {"\n"} En la fase de Battle-shock de tu oponente, si una unidad enemiga que está por debajo de su Fuerza Inicial está dentro de 12" de un modelo Chaos Knight de tu ejército, esa unidad enemiga debe realizar una prueba de Battle-shock. Para los propósitos de esta habilidad, si una unidad tiene una Fuerza Inicial de 1, se considera por debajo de su Fuerza Inicial si ha perdido una o más heridas.
+           {"\n"}{"\n"} <Text style={{textTransform: 'uppercase', fontStyle: 'italic', fontSize:19, fontWeight: 'bold'}}>NOTA DEL DISEÑADOR</Text>: Esto significa que todas las unidades enemigas dentro del rango de esta habilidad de Aura que hayan perdido uno o más modelos deben realizar una prueba de <Text style={{fontStyle: 'italic'}}>Battle-shock</Text> en la fase de Comando de tu oponente, no solo aquellas que están por debajo de la mitad de su fuerza.
+            </Text> {/** FORJADO EN EL TERROR (AURA)*/}
             <br/>
-            {/**----------------------------------------------------------------------------------------- */}
-            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>Demonios DEL CAOS – REGLAS DEL DESTACAMENTO DE INCURSIÓN demoniaca
-            </Text>
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Si la Facción de tu Ejército es Legiones Daemónicas, puedes usar esta regla de Destacamento de Incursión Demoníaca.
-            </Text>
-            {"\n"}<Text style={{ fontSize: 20, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, textTransform: 'uppercase', fontStyle: 'italic',fontWeight: 'bold'}}>
-            WARP RIFTS
-            </Text>
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Las legiones demoníacas desgarran la tela del espacio real, entidades malévolas parpadeando en existencia como fantasmas de una pesadilla. Peor aún, a medida que el terror y el pánico se apoderan de sus víctimas, sus almas mortales se convierten en presas cada vez más fáciles para las entidades que emergen del vórtice.
-            </Text>
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            Cada vez que una unidad de <Text style={{fontWeight: 'bold', fontStyle: 'italic'}}>Legiones Daemonica</Text> de tu ejército se despliegue en el campo de batalla usando la habilidad de Ataque Profundo, si se despliega completamente dentro de la Sombra del Caos de tu ejército, puede ser colocada en cualquier lugar que esté a más de 6" de distancia horizontalmente de todos los modelos enemigos, en lugar de más de 9".
-            </Text>
-            {/** ARMY RULE/ DEMONIO DEL CAOS */}
+            {/**------------------------------- MEJORAS ------------------------------- */}
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>MEJORAS – ENHANCEMENTS
+           </Text>
+           <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+           Si estás usando la regla del Destacamento Lance Traitoris, puedes utilizar estas Mejoras del Lance Traitoris.
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>SEÑOR DEL MIEDO</Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                     Este tiránico Caballero es el epítome del poder del miedo, infundiendo tanto terror en sus secuaces como en el enemigo, asegurando una obediencia inquebrantable.
+                    {"\n"}Solo modelo Chaos Knight. Al inicio de la fase de Combate, puedes seleccionar una unidad enemiga dentro del rango de Compromiso del portador; esa unidad enemiga debe realizar una prueba de Battle-shock.
+                </Text> {/** SEÑOR DEL MIEDO*/}
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>AURA DEL TERROR</Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Este imponente Caballero está envuelto en tentáculos de energía warp que acarician las mentes de cualquier enemigo que se acerque, llevando a aquellos que son tocados a un estado de miedo abyecto. Dondequiera que este Caballero camine, esta aura de terror impregna y corrompe la tierra hasta que pueda ser purificada.
+                    {"\n"}Solo modelo Chaos Knight. Si controlas un marcador de objetivo al final de tu fase de Comando, y el portador está dentro del rango de ese marcador de objetivo, ese marcador de objetivo se considera Tainted y permanece bajo tu control incluso si no tienes modelos dentro de su rango, hasta que tu oponente lo controle al inicio o final de cualquier turno. Además, mientras un marcador de objetivo esté Tainted y bajo tu control y la habilidad Desesperación esté activa para tu ejército, ese marcador de objetivo tiene la habilidad Desesperación como si fuera un modelo Chaos Knight de tu ejército (resta 1 a las pruebas de Battle-shock y Liderazgo realizadas por unidades enemigas dentro de 12" de él).
+                </Text> {/** AURA DEL TERROR*/}
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>LA MARCA DEL TRAIDOR</Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Las oscuras hazañas y la heráldica manchada de sangre de este Caballero del Caos son susurradas en todas partes. Los rumores se extienden de que enfrentarlo es enfrentarse a una muerte dolorosa. Cada blasón en su casco proclama las atrocidades cometidas por el portador, y solo mirarlo provoca un terror antinatural y pesadillas abrumadoras.
+                    {"\n"}Solo modelo Chaos Knight. La habilidad Doom y Oscuridad está activa para el portador desde la primera ronda de batalla, en lugar de desde la tercera.
+                </Text> {/** LA MARCA DEL TRAIDOR*/}
+            </Text> {/** Mejoras*/}
             <br/>
-            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>EstrataGemas – Stratagems
-            </Text>
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            Si estás usando la regla de Destacamento de Incursión Demoníaca, puedes usar estas Estratagemas de Incursión Demoníaca.
-            </Text>
-            {/**------------------------------------------- 1 ------------------------------------------- */}
-            <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                    REALIDAD CORROMPIDA.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA ESTRATÉGICA</Text>
-                    </Text> {"\n"}
-                    Los demonios sienten instintivamente la necesidad de despojar y corromper cada rincón del espacio real, para así sostener mejor sus formas de otro mundo.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>Al inicio de cualquier fase de Comando.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Una unidad de Legiones Daemonica de tu ejército que esté dentro del rango de un marcador de objetivo que controles.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Ese marcador de objetivo se considera Corrompido y permanece bajo tu control, incluso si no tienes modelos dentro de su rango, hasta que tu oponente lo controle al inicio o al final de cualquier turno. Además, mientras un marcador de objetivo esté Corrompido y bajo tu control, el área del campo de batalla dentro de 6" de ese marcador de objetivo se considera que está dentro de la Sombra del Caos de tu ejército.
-            </Text>
-            {/**------------------------------------------- 2 ------------------------------------------- */}
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                    OLEADA DEL VORTICE.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA ESTRATÉGICA</Text>
-                    </Text> {"\n"}
-                    Los vientos del vórtice soplan con fuerza, invigorando a los demonios y dándoles velocidad y ferocidad sobrenaturales.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>Tu fase de Carga.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Una unidad de Legiones Daemonica de tu ejército que esté dentro de la Sombra del Caos de tu ejército.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Hasta el final de la fase, tu unidad es elegible para declarar una carga incluso si Avanzó este turno.
-            </Text>
-            {/**------------------------------------------- 3 ------------------------------------------- */}
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                    TRAGO DE TERROR.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA DE TÁCTICA DE BATALLA</Text>
-                    </Text> {"\n"}
-                    El creciente miedo de su presa mortal sirve como un elixir embriagador para los seguidores demoníacos, cada trago invigorando sus formas con poder mortal.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>Tu fase de Disparo o la fase de Combate.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Una unidad de Legiones Daemonica de tu ejército que no haya sido seleccionada para disparar o combatir en esta fase.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Hasta el final de la fase, mejora la característica de Penetración de Armadura de las armas equipadas por los modelos en esa unidad en 1. Además, hasta el final de la fase, cada vez que tal arma apunte a una unidad que esté Batalla-impactada, puedes volver a tirar el dado para herir.
-            </Text>
-            {/**------------------------------------------- 4 ------------------------------------------- */}
-            {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                DENIZEN DE LOS VORTICES.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA ESTRATÉGICA</Text>
-                    </Text> {"\n"}
-                    Siempre al acecho en el vórtice, los demonios esperarán hasta que las barreras entre reinos se debiliten antes de desgarrar su camino hacia el espacio real.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>Tu fase de Movimiento.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Una unidad de Legiones Daemonica de tu ejército que llegue utilizando la habilidad de Ataque Profundo esta fase.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Tu unidad puede ser colocada en cualquier lugar del campo de batalla que esté a más de 3" de distancia horizontalmente de todos los modelos enemigos.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Restricciones:</Text> Una unidad objetivo de esta Estratagemas no es elegible para declarar una carga en el mismo turno.
-            </Text>
-             {/**------------------------------------------- 5 ------------------------------------------- */}
-             {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                EL REINO DEL CAOS.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA DE TÁCTICA DE BATALLA</Text>
-                    </Text> {"\n"}
-                    Cuando las energías del vórtice se filtran en el espacio real, las Legiones Daemonica pueden abrir portales en el aire aparentemente delgado, regresando a sus paisajes infernales solo para materializarse en medio de sus enemigos un latido después.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>Al final del turno de tu oponente.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Hasta dos unidades de Legiones Daemonica de tu ejército que estén dentro de la Sombra del Caos de tu ejército, o una unidad más de Legiones Daemonica de tu ejército.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Retira las unidades objetivo del campo de batalla y colócalas en Reservas Estratégicas. Regresarán al campo de batalla en el paso de Refuerzos de tu próxima fase de Movimiento utilizando la habilidad de Ataque Profundo.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Restricciones:</Text> No puedes seleccionar unidades que estén dentro del Rango de Compromiso de una o más unidades enemigas con esta Estratagemas.
-            </Text>
-             {/**------------------------------------------- 6 ------------------------------------------- */}
-             {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
-            {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#3b3d5e',fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-            INVULNERABILIDAD DEMONÍACA.
-                    {"\n"} <Text style={{fontSize:16, textTransform: 'uppercase', textAlign:'center', color : "#fff", fontWeight: 'bold', textTransform: 'uppercase'}}>INCURSION DEMONÍACA – ESTRATAGEMA DE TÁCTICA DE BATALLA</Text>
-                    </Text> {"\n"}
-                    Los demonios son locura personificada. Sus cuerpos están hechos de la esencia del vórtice y son difíciles de destruir mediante medios convencionales.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> cuando:</Text>La fase de Disparo de tu oponente, justo después de que una unidad enemiga haya seleccionado sus objetivos.
-                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> objetivo:</Text> Una unidad de Legiones Daemonica de tu ejército que fue seleccionada como objetivo de uno o más ataques de esa unidad enemiga.
-                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic"}}> Efecto:</Text> Hasta el final de la fase, cada vez que se realice una tirada de salvación invulnerable para un modelo en tu unidad, vuelve a tirar una salvación de 1.
-            </Text>
-            <br/>
-            {/** STRATAGEMS */}
-            <br/>
-                <Text style={{  textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#11183f', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                DEMONIOS DEL CAOS – MEJORAS DE INCURSION DEMONÍACA
-                </Text> {/**ENHANCEMENTS */}
-                <Text style={{ fontSize: 18, backgroundColor: '#3b3d5e', color: '#fff', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 }}>
-                Si estás usando la regla de Destacamento de Incursión Demoníaca, puedes usar estas Mejoras de Incursión Demoníaca.
-                    {/** ---------------------------------------- 1 ---------------------------------------- */}
-                    {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>A’RGATH, EL REY DE LAS ESPADAS</Text>
-                    {"\n"}Cuando un demonio está atado dentro de un arma por su maestro infernal, rara vez se somete voluntariamente a esta terrible encarcelación. No se puede decir lo mismo de A’rgath. Una vida de masacres y dedicación celosa llevó a este carnicero a obtener la condición de demonio. Tal fue su devoción a Khorne que, en lugar de aceptar la inmortalidad como Príncipe Demoníaco, eligió tomar la forma de una espada mortal para derramar la sangre vital de los mayores enemigos de Khorne. Con su mano guiada por el espíritu de A’rgath, el portador de esta arma se convierte en casi imparable. Incontables son los campeones rivales y héroes mortales que han caído ante su poder.
-                    {"\n"} <Text style={{fontWeight: "bold", fontStyle: 'italic'}}>Modelo de Legiones Daemonica de Khorne únicamente.</Text> Añade 1 a las características de Ataques y Fuerza de las armas cuerpo a cuerpo del portador. Mientras el portador esté dentro de la Sombra del Caos de tu ejército, añade 2 a las características de Ataques y Fuerza de las armas cuerpo a cuerpo del portador.
-                    <br/>
-                    {/** ---------------------------------------- 2 ---------------------------------------- */}
-                    {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>EL BASTÓN ETERNO</Text>
-                    {"\n"}Este bastón arde con llamas vibrantes del vórtice. Tan pronto como su maestro toma el arma eldritch, ellos también se ven envueltos en el mismo fuego demoníaco. Desde dentro de este infierno magenta, el portador demoníaco del Bastón Eterno lanza torrentes abrasadores del fuego rosa de Tzeentch, convirtiendo armaduras en cenizas e inmolando o mutando irrevocablemente la carne debajo.
-                    {"\n"} <Text style={{fontWeight: "bold", fontStyle: 'italic'}}>Modelo de Legiones Daemonica de Tzeentch únicamente.</Text> Añade 1 a la característica de Fuerza de las armas a distancia del portador y aumenta la característica de Rango de tales armas en 3". Mientras el portador esté dentro de la Sombra del Caos de tu ejército, añade 2 a la característica de Fuerza de las armas a distancia del portador y aumenta la característica de Rango de tales armas en 6" en su lugar.
-                    <br/>
-                    {/** ---------------------------------------- 3 ---------------------------------------- */}
-                    {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>EL REGALO INFINITO</Text>
-                    {"\n"}Solo los demonios de plaga más consumados reciben el Regalo Infinito. Una enfermedad de malignidad indescriptible y benificencia repulsiva, cambia de forma constantemente de plaga a infestación a malestar. La única constante es su capacidad de reconstruir el cuerpo de su sufridor incluso a partir de las heridas más catastróficas. Un momento, las bacterias infernales pueden multiplicarse como el fuego hasta que su masa gélida llena una herida carnosa con carne demoníaca fresca. Al siguiente, vapores pestilenciales pueden brotar de la hendidura del demonio, velando su masa devastada antes de rasgarse y revelar una forma curada de sus recientes heridas.
-                    {"\n"} <Text style={{fontWeight: "bold", fontStyle: 'italic'}}>Modelo de Legiones Daemonica de Nurgle únicamente.</Text>   El portador tiene la habilidad de <Text style={{fontStyle: "italic", textTransform: 'uppercase'}}>No Sentir Dolor 5+</Text>. Mientras el portador esté dentro de la Sombra del Caos de tu ejército, el portador tiene la habilidad de <Text style={{fontStyle: "italic", textTransform: 'uppercase'}}>No Sentir Dolor 4+</Text> en su lugar.
-                    <br/>
-                    {/** ---------------------------------------- 4 ---------------------------------------- */}
-                    {"\n"}<Text style={{  fontStyle: 'italic',textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>LADRÓN DE ALMAS</Text>
-                    {"\n"}Esta glotona espada devora las almas de sus víctimas antes de vigorizar la forma corpórea de su portador. Su codicia proviene del hambriento Guardián de Secretos atrapado en su interior, una arrogante entidad que intentó devorar suficientes almas Aeldari para desafiar al mismo Slaanesh. Como castigo por la monstruosa arrogancia del demonio, Slaanesh lo aprisionó dentro de Ladrón de Almas, condenando al Guardián de Secretos a sostener a otros demonios con su frenético apetito sin retener nada para sí mismo.
-                    {"\n"} <Text style={{fontWeight: "bold", fontStyle: 'italic'}}>Solo para modelo de Legiones Daemonica de Slaanesh.</Text>  Cada vez que el portador destruye un modelo enemigo con un ataque cuerpo a cuerpo, <Text style={{fontStyle: "italic", textTransform: 'uppercase'}}>tira un D6</Text>, sumando 1 al resultado si el portador está dentro de la Sombra del Caos de tu ejército. Con un <Text style={{fontStyle: "italic", textTransform: 'uppercase'}}>4+</Text>, el portador recupera 1 herida perdida.
-                </Text>{/**ENHANCEMENTS */}
+            {/**------------------------------- ESTRATAGEMAS ------------------------------- */}
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>ESTRATAGEMAS DEL TRAITORIS LANCE – STRATAGEMS
+           </Text>
+           <Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+           Si estás usando la regla del Destacamento Lance Traitoris, puedes usar estas Estratagemas del Lance Traitoris
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>PERROS DEL MIEDO
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA TÁCTICA DE BATALLA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Los pilotos de War Dog rodean a sus víctimas aterrorizadas y luego atacan en masa ferozmente.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> Al inicio de tu fase de Disparo o de Combate.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Dos o más unidades War Dog de tu ejército y una unidad enemiga que sea un objetivo elegible para cada una de esas unidades War Dog seleccionadas.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Hasta el final de la fase, las unidades War Dog seleccionadas solo pueden atacar esa unidad enemiga, pero todas las armas equipadas por esos modelos War Dog obtienen la habilidad <Text style={{fontStyle:'italic', textTransform: 'uppercase'}}>GOLPES SOSTENIDOS 1</Text>. Además, si esa unidad enemiga está bajo los efectos de <Text style={{fontStyle:'italic'}}>Battle-shock</Text>, hasta el final de la fase, cada vez que un modelo War Dog seleccionado realice un ataque contra esa unidad enemiga, una tirada de impacto sin modificar de 5+ cuenta como un Impacto Crítico.
+                </Text> {/** PERROS DEL MIEDO*/}
+
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>DESDÉN POR LOS DÉBILES
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA TÁCTICA DE BATALLA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Los pilotos de los Caballeros del Caos se niegan a ceder mientras queden enemigos por matar, ignorando despectivamente a aquellos que sucumben al miedo.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> En la fase de Combate, justo después de que una unidad enemiga haya seleccionado sus objetivos.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Una unidad de Chaos Knights de tu ejército que haya sido seleccionada como objetivo de uno o más ataques de la unidad atacante.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Hasta el final de la fase, tu modelo obtiene la habilidad <Text style={{fontStyle:'italic'}}>No Hay Dolor 6+</Text>, y la habilidad <Text style={{fontStyle:'italic'}}>No Hay Dolor 5+</Text> contra ataques realizados por modelos bajo los efectos de <Text style={{fontStyle:'italic'}}>Battle-shock</Text>.
+                </Text> {/** DESDÉN POR LOS DÉBILES*/}
+
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>SOMBRAS DE TERROR
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA DE EQUIPO DE GUERRA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Gritando con hambre fantasmal, entidades demoníacas descienden en un torbellino alado de sombras para desgarrar las almas de aquellos enemigos que muestran incluso un momento de miedo. Los raptores de almas desgarran a sus víctimas y, mientras se alimentan, canalizan esa fuerza vital para regenerar el daño de batalla o curar al piloto del Caballero en el que estas criaturas anidan.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> Cualquier fase, justo después de que una unidad enemiga falle una prueba de Battle-shock.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Una unidad Chaos Knights de tu ejército que esté a 12" de esa unidad enemiga.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Tira seis dados D6. Por cada 4+, esa unidad enemiga sufre 1 herida mortal y este modelo recupera hasta 1 herida perdida.
+                </Text> {/** SOMBRAS DE TERROR*/}
+                
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>UNA CORREA LARGA
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA ESTRATÉGICA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Los War Dogs de los Chaos Knights temen más a sus señores que al enemigo, y obedecen bien a sus amos, pues conocen el precio de la desobediencia o la deslealtad.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> En tu fase de Comando.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Un modelo Abhorrent de tu ejército y hasta tres modelos War Dog de tu ejército.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Hasta el inicio de tu próxima fase de Comando, esos modelos War Dog cuentan como estando dentro del rango de cualquier habilidad de Aura que tenga ese modelo Abhorrent.
+                </Text> {/** UNA CORREA LARGA*/}
+
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>CABALLEROS DE LAS SOMBRAS
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA DE HAZAÑA ÉPICA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    Como fantasmas oscuros, algunos Chaos Knights pueden moverse a través de paredes sólidas sin impedimentos.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> En tu fase de Movimiento o de Carga.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Hasta dos modelos War Dog de tu ejército o un modelo Titanic Chaos Knight de tu ejército.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Hasta el final de la fase, los modelos seleccionados pueden moverse horizontalmente a través de modelos y elementos del terreno como si no estuvieran allí.
+                </Text> {/** CABALLEROS DE LAS SOMBRAS*/}
+
+                {"\n"}{"\n"}<Text style={{fontSize:19,fontStyle:'italic', textTransform: 'uppercase', fontWeight: 'bold'}}>ESCUDO DIABÓLICO
+                   {"\n"} <Text style={{fontSize:16, fontStyle:'italic'}}>ESTRATAGEMA DE EQUIPO DE GUERRA DEL TRAITORIS LANCE</Text>
+                </Text>
+                    {"\n"}<Text style={{ fontSize: 18, backgroundColor: '#8a7371', color: '#000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3,borderBottomLeftRadius: 10, borderBottomRightRadius: 10}}>
+                    La sangre ectoplasmática fluye caliente a través de conductos resplandecientes mientras el Chaos Knight alimenta de poder a sus emisores de escudo.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> cuando:</Text> En la fase de Disparo de tu oponente, justo después de que una unidad enemiga haya seleccionado sus objetivos.
+                    {"\n"}<Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> objetivo:</Text> Una unidad de Chaos Knights de tu ejército que haya sido seleccionada como objetivo de uno o más ataques de la unidad atacante.
+                    {"\n"} <Text style={{textTransform: 'uppercase', fontSize: 19, fontStyle: "italic", fontWeight: 'bold'}}> Efecto:</Text> Hasta el final de la fase, ese modelo Chaos Knights tiene una salvación invulnerable de 4+ contra ataques a distancia.
+                </Text> {/** ESCUDO DIABÓLICO*/}
+
+            </Text> {/** Estratagemas*/}
         </ScrollView>
     );
 }

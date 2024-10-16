@@ -37,7 +37,7 @@ export default function App() {
         <Stack.Screen name='ChaosDaemons' component={ChaosDaemonsScreen} options={{tittle: 'Chaos Daemons'}}/>
         {/** Definir las pantallas de Chaos Knight */}
         <Stack.Screen name='ArmyChaosKnight' component={ArmyChaosKnightScreen} options={{tittle:'Army Chaos Knights'}}/>
-        <Stack.Screen name='ChaosKnights' component={ChaosKnightScreen} options={{tittle:'Chaos Knights'}}/>
+        <Stack.Screen name='ChaosKnight' component={ChaosKnightScreen} options={{tittle:'Chaos Knight'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
