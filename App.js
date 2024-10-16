@@ -16,6 +16,9 @@ import ChaosDaemonsScreen from './src/screens/ChaosDaemons';
 //Importar las pabtallas de Chaos Knight
 import ArmyChaosKnightScreen from './src/screens/ArmyChaosKnight';
 import ChaosKnightScreen from './src/screens/ChaosKnight';
+//Importar las pantallas de Chaos Space Marines
+import ArmyChaosSpaceMarinesScreen from './src/screens/ArmyChaosSpaceMarines';
+import ChaosSpaceMarinesScreen from './src/screens/ChaosSpaceMarines';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +41,9 @@ export default function App() {
         {/** Definir las pantallas de Chaos Knight */}
         <Stack.Screen name='ArmyChaosKnight' component={ArmyChaosKnightScreen} options={{tittle:'Army Chaos Knights'}}/>
         <Stack.Screen name='ChaosKnight' component={ChaosKnightScreen} options={{tittle:'Chaos Knight'}}/>
+        {/** Definir las pantallas de Chaos Space Marines */}
+        <Stack.Screen name='ArmyChaosSpaceMarines' component={ArmyChaosSpaceMarinesScreen} options={{tittle: 'Army Chaos Space Marines'}}/>
+        <Stack.Screen name='ChaosSpaceMarines' component={ChaosSpaceMarinesScreen} options={{tittle:'Chaos Space Marines'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

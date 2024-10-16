@@ -32,6 +32,11 @@ const HomeScreen = ({ navigation }) => {
         <Image resizeMode="stretch" source={require('../img/armychaosknight.jpg')} style={styles.image} />
       </Pressable>
 
+      {/* Imagen que navega a la pantalla ArmyChaosSpaceMarines*/}
+      <Pressable onPress={() => navigation.navigate('ArmyChaosSpaceMarines')}>
+        <Image resizeMode="stretch" source={require('../img/army_chaos_space_marines.jpg')} style={styles.image} />
+      </Pressable>
+
     </ScrollView>
   );
 };
