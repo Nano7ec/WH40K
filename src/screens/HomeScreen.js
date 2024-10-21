@@ -23,18 +23,18 @@ const HomeScreen = ({ navigation }) => {
       </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyChaosDaemons*/}
-      <Pressable onPress={() => navigation.navigate('ArmyChaosDaemons')}>
-        <Image resizeMode="stretch" source={require('../img/armychaosdaemons.jpg')} style={styles.image} />
+      <Pressable onPress={() => navigation.navigate('MenuChaosDaemons')}>
+        <Image resizeMode="stretch" source={require('../img/chaosdaemons.png')} style={styles.image} />
       </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyChaosKnight*/}
-      <Pressable onPress={() => navigation.navigate('ArmyChaosKnight')}>
-        <Image resizeMode="stretch" source={require('../img/armychaosknight.jpg')} style={styles.image} />
+      <Pressable onPress={() => navigation.navigate('MenuChaosKnight')}>
+        <Image resizeMode="stretch" source={require('../img/chaosknight.png')} style={styles.image} />
       </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyChaosSpaceMarines*/}
-      <Pressable onPress={() => navigation.navigate('ArmyChaosSpaceMarines')}>
-        <Image resizeMode="stretch" source={require('../img/army_chaos_space_marines.jpg')} style={styles.image} />
+      <Pressable onPress={() => navigation.navigate('MenuChaosSpaceMarines')}>
+        <Image resizeMode="stretch" source={require('../img/chaos_space_marines.png')} style={styles.image} />
       </Pressable>
       
     </ScrollView>

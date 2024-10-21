@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
 
-const MiniBloodAngelsScreen = () => {
+const MiniChaosKnightScreen = () => {
     return(
         <ScrollView style={{ flex: 1, backgroundColor: '#ff9f9f', padding: 7}}>
             {/**INICIA LA TABLA DE LA GRAMATICA */}
@@ -261,17 +261,6 @@ const MiniBloodAngelsScreen = () => {
             </View>
             {/** FINALIZACION DE LA TABLA DE LA GRAMATICA*/}           
             
-            {/* ASTORATH */}
-            <View style={{ alignItems: 'center', marginVertical: 10 }}>
-                <Image 
-                    source={require('../img/blood_angels/astorath.png')}
-                    style={styles.image}
-                    resizeMode="stretch"  // Se ajusta sin recortar la imagen
-                />
-            </View>
-            <View>
-                
-            </View>
         </ScrollView>
     );
 
@@ -286,4 +275,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default MiniBloodAngelsScreen;
+export default MiniChaosKnightScreen;
