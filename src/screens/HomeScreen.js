@@ -18,8 +18,8 @@ const HomeScreen = ({ navigation }) => {
       </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyBloodAngels */}
-      <Pressable onPress={() => navigation.navigate('ArmyBloodAngels')}>
-        <Image resizeMode="stretch" source={require('../img/bloodangels.jpg')} style={styles.image} />
+      <Pressable onPress={() => navigation.navigate('MenuBloodAngels')}>
+        <Image resizeMode="stretch" source={require('../img/bloodangels.png')} style={styles.image} />
       </Pressable>
 
       {/* Imagen que navega a la pantalla ArmyChaosDaemons*/}
@@ -36,7 +36,7 @@ const HomeScreen = ({ navigation }) => {
       <Pressable onPress={() => navigation.navigate('ArmyChaosSpaceMarines')}>
         <Image resizeMode="stretch" source={require('../img/army_chaos_space_marines.jpg')} style={styles.image} />
       </Pressable>
-
+      
     </ScrollView>
   );
 };
