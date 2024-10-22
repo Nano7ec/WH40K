@@ -3231,26 +3231,134 @@ OPCIONES DE EQUIPO
   </>
 </>
 
-{/**Nombre */ }
+{/**parasiteofmortrex */ }
 <>
   {/**Imagenes */}
-  <Image resizeMode="stretch" style={styles.image} source={require('../img/WingedHiveTyrant.png')} />
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/parasiteofmortrex.png')} />
 
   {/**Tabla de habilidades */}
   <Text style={styles.border}>
     Habilidades
   </Text>
   <Text style={styles.descrip}>
-    <Text style={styles.wapo}>Core:</Text>Deadly Demise D3, Deep Strike
-    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
-    {'\n'}<Text style={styles.wapo}>Voluntad de la Mente Colmena:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
-    {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
-    {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
+    <Text style={styles.wapo}>Core:</Text>Deep Strike, Lone Operative,Stealth
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Parasitic Infection</Text> Cada vez que una miniatura de infantería es destruida por un ataque efectuado con el ovipositor de púas de esta miniatura, después de que esta miniatura haya terminado de efectuar sus ataques, puedes añadir una nueva unidad de Enjambres Destripadores a tu ejército formado por D3 miniaturas y desplegarla a 3» o menos de esta miniatura. 
+    {'\n'}Si lo haces, esa unidad de Enjambres Destripadores puede desplegarse dentro del Alcance de Combate de la unidad de la miniatura destruida (pero no dentro del Alcance de Combate de ninguna otra unidad enemiga).
+    {'\n'}<Text style={styles.wapo}>It Itches!:</Text> Al inicio de la fase de combate, selecciona una unidad enemiga a distancia de combate de esta miniatura. 
+    {'\n'}Esa unidad enemiga debe efectuar un chequeo de Conmoción de batalla.
   </Text>
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
 
-  {/**Invulnerabilidad */}
+        <Text style={styles.cellText}><Text style={styles.wapo}>Barbed ovipositor [ANTI-INFANTRY 3+, EXTRA ATTACKS]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+    </>
+  </View>
+  <>
+   {/* Filas de la tabla armas cuerpo a cuerpo */}
+   <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Clawed limbs</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}></Text>
+      </View>
+    </>
+  </View>
+  <>
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Parasite of mortrex.
+      {'\n'}Este modelo va equipado con: ovipositor arbóreo; extremidades con garras.
+      {'\n'}1 model ..............................................................90 pts
+      </Text>
+
+  </>
+</>
+
+</>
+
+{/**Psychophage */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Psychophage.png')} />
+
+  {/**Tabla de habilidades */}
   <Text style={styles.border}>
-    Invulnerable Save    4+
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly Demise 1, Feel No Pain 5+
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Bio-stimulus (Aura):</Text> Mientras una unidad tiránida amiga esté a 6" o menos de esta miniatura, las miniaturas de esa unidad tienen la habilidad No sentir dolor 6+.
+    {'\n'}<Text style={styles.wapo}>Feeding Frenzy:</Text> Cada vez que esta miniatura realice un ataque cuerpo a cuerpo cuyo objetivo sea una unidad que esté por debajo de su fuerza inicial, suma 1 a la tirada para golpear.
+    {'\n'} Si ese objetivo también está por debajo de Media Fuerza, suma 1 a la tirada para Herir también.
   </Text>
 
   {/* Cabecera de la tabla daño distancia */}
@@ -3284,25 +3392,25 @@ OPCIONES DE EQUIPO
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Psychoclastic torrent [IGNORES COVER, TORRENT]</Text></Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>36"</Text>
+        <Text style={styles.cellText}>12"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>D3"</Text>
+        <Text style={styles.cellText}>D6"</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2+"</Text>
+        <Text style={styles.cellText}>N/A</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
+        <Text style={styles.cellText}>6</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
+        <Text style={styles.cellText}>-1</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>3</Text>
+        <Text style={styles.cellText}>1</Text>
       </View>
     </>
   </View>
@@ -3338,50 +3446,179 @@ OPCIONES DE EQUIPO
     <>
       <View style={styles.tableCell}>
 
-        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+        <Text style={styles.cellText}><Text style={styles.wapo}>Talons and betentacled maw
+        [ANTI-PSYKER 2+, DEVASTATING WOUNDS]</Text></Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>meele</Text>
       </View>
       <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D6+1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
         <Text style={styles.cellText}>6</Text>
       </View>
       <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
         <Text style={styles.cellText}>2</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>3</Text>
       </View>
     </>
   </View>
   <>
 
-{/**Reglas extras */}
-<Text style={styles.border}>
-      Composicion de la min
-    </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
-
  {/**Composicion de las unidades */}
  <Text style={styles.border}>
       Composicion de la min
     </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.
-      {'\n'}10 models .........................................................75 pts
-      {'\n'}20 models ........................................................150 pts
+    <Text style={styles.descrip}>■ 1 Psychophage.
+      {'\n'}Este modelo va equipado con: torrente psicoclasta; garras y fauces betentaculares
+      {'\n'}1 model ............................................................125 pts
       </Text>
 
   </>
 </>
 
+{/**Pyrovores */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Pyrovores.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly Demise 1
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Burning Spray:</Text> En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga alcanzada por uno o más de esos ataques. Hasta el final de la fase, esa unidad enemiga no puede tener el Beneficio de Cobertura.
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Flamespurt [IGNORES COVER, TORRENT, TWIN-LINKED]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>12"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>D6+1"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>N/A</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Chitin-barbed limbs </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1-3 Pyrovores.
+      {'\n'}Este modelo va equipado con: flamespurt; extremidades con chitin-barbed
+      {'\n'}1 model ..............................................................30 pts
+{'\n'}2 models ............................................................60 pts
+{'\n'}3 models ............................................................90 pts
+      </Text>
+
+  </>
+</>
 
     </ScrollView>
   );
