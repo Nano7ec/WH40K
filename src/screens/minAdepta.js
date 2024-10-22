@@ -197,6 +197,148 @@ const MinAdepta = () => {
           </>
         </View>
         </>
+        {/**Morvenn Vahl */}
+      <>
+        {/*<Image
+          resizeMode="stretch"
+          style={styles.image}
+          source={require("../img/MorvennVahl.png")}
+        />*/}
+        <Text style={styles.border}>Habilidades</Text>
+        <Text style={styles.descrip}>
+          {"\n"}
+          <Text style={styles.wapo}>Nucleo:</Text> Muerte Letal 1, Líder.
+          {"\n"}
+          <Text style={styles.wapo}>Faccion:</Text> Actos de Fe
+          {"\n"}
+          <Text style={styles.wapo}>Abadesa Sanctorum:</Text> Mientras este modelo lidera una unidad, cada vez que un modelo de esa unidad haga un ataque, puedes repetir la tirada para impactar y repetir la tirada para herir.
+          {"\n"}
+          <Text style={styles.wapo}>Repugnancia Justa: </Text>Una vez por batalla, en tu fase de Mando, este modelo puede usar esta habilidad. Si lo hace, hasta el inicio de tu siguiente fase de Mando, añade 3 a la característica de Ataques de Fidelis y de la Lanza de Iluminación.
+          
+        </Text>
+        {/* Cabecera de la tabla */}
+        <View style={styles.tableRow}>
+          <>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>AD</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>R</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>A</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>BS</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>S</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>AP</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>D</Text>
+            </View>
+          </>
+        </View>
+        {/* Filas de la tabla */}
+        <View style={styles.tableRow}>
+          <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>
+                <Text style={styles.wapo}>Bio-cannon [BLAST, HEAVY]</Text>
+              </Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>24"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>D6</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>4+"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>5</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>0</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        {/* Cabecera de la tabla */}
+        <View style={styles.tableRow}>
+          <>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>ACC</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>R</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>A</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>BS</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>S</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>AP</Text>
+            </View>
+            <View style={styles.tableCelltop}>
+              <Text style={styles.headerText}>D</Text>
+            </View>
+          </>
+        </View>
+        {/* Filas de la tabla */}
+        <View style={styles.tableRow}>
+          <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>
+                <Text style={styles.wapo}>Xenos claws and teeth</Text>
+              </Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>meele</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>4+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>4</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>0</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        <>
+          <Text style={styles.border}>Composicion de la min</Text>
+          <Text style={styles.descrip}>
+            ■ 5-10 Barbgaunts
+            {"\n"}Cada modelo está equipado con: bio-cañón; garras xenos y
+            dientes.
+          </Text>
+        </>
+        <Text style={styles.MinDes}>
+          5 models
+          ............................................................50 pts
+          {"\n"}10 models
+          .......................................................100 pts
+        </Text>
+      </>
     </ScrollView>
   );
 };

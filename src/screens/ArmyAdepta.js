@@ -14,6 +14,15 @@ const ArmyAdeptaScreen = ({ navigation }) => {
           style={styles.image}
         />
       </Pressable>
+
+      <Pressable onPress={() => navigation.navigate("minAdepta")}>
+        <Image resizeMode="stretch"
+          source={require("../img/reglas.png")}
+          style={styles.image}
+        />
+          
+      </Pressable>
+      
     </View>
   );
 };
