@@ -45,7 +45,7 @@ export default function App() {
         {/** Definir las nuevas pantallas de Blood Angels */}
        <Stack.Screen name='MenuBloodAngels' component={MenuBloodsAngelsScreen} options={{title: 'Menu Blood Angels'}}/>
        <Stack.Screen name='ArmyBloodAngels' component={ArmyBloodAngelsScreen} options={{title: 'Reglas del juego Angeles Sangrientos'}}/>
-       <Stack.Screen name='MiniBloodAngels' component={MiniBloodAngelsScreen} options={{tittle: 'Miniaturas Angeles Sangrientos'}}/>
+       <Stack.Screen name='MiniBloodAngels' component={MiniBloodAngelsScreen} options={{title: 'Miniaturas Angeles Sangrientos'}}/>
 
         {/** Definir las pantallas de Chaos Daemons */}
         <Stack.Screen name='MenuChaosDaemons' component={MenuChaosDaemonsScreen} options={{title: 'Menu Demonios del Caos'}}/>

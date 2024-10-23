@@ -5,29 +5,29 @@ const MiniChaosSpaceMarinesScreen = () => {
     return(
         <ScrollView style={{ flex: 1, backgroundColor: '#ff9f9f', padding: 7}}>
             {/**INICIA LA TABLA DE LA GRAMATICA */}
-            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#ff0000', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomRightRadius:10, borderBottomLeftRadius:10 }}>Gramatica usada
+            <Text style={{textTransform: 'uppercase',textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#676b6c', fontSize: 24, padding: 5, borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomRightRadius:10, borderBottomLeftRadius:10 }}>Gramatica usada
             </Text>
         {/* Cabecera de la tabla */}
         <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',}}>
                 <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
                 justifyContent: 'center', // Centra el contenido verticalmente
-                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                padding: 5,backgroundColor: '#6f7773',marginTop: 5,fontSize: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}> Palabra</Text>
                 </View>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
                 justifyContent: 'center', // Centra el contenido verticalmente
-                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                padding: 5,backgroundColor: '#6f7773',marginTop: 5,fontSize: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}> Acronimo </Text>
                 </View>
                 </>
             </View>
             {/* Filas de la tabla */}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -45,7 +45,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -63,7 +63,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -81,7 +81,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
                         <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -99,7 +99,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -117,7 +117,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -135,7 +135,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -153,7 +153,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -171,7 +171,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -189,7 +189,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -207,7 +207,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -225,7 +225,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
@@ -243,7 +243,7 @@ const MiniChaosSpaceMarinesScreen = () => {
             </View>
             {/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            borderBottomWidth: 1,borderBottomColor: '#676b6c',backgroundColor: '#6f7773',fontSize: 10}}>
             <>
                 <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
                 alignItems: 'center', // Centra el contenido horizontalmente
