@@ -5,17 +5,17 @@ import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native
 
 const { width } = Dimensions.get('window');
 
-const ArmyGreyKnigtsScreen = ({ navigation }) => {
+const ArmyLegueVotannScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('GreyKnight')}>
-        <Image resizeMode="stretch" source={require('../img/TitleGreyKnightsArmyRules.png')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('LegueVotann')}>
+        <Image resizeMode="stretch" source={require('../img/TitleLeaguesVArmyRules.png')} style={styles.image} />
       </TouchableOpacity>
 
       {/* Imagen que navega a la pantalla ArmyTyranid */}
-      <TouchableOpacity onPress={() => navigation.navigate('MinGreyK')}>
-        <Image resizeMode="stretch" source={require('../img/TitleMinGreyK.jpeg')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('MinLeguesVotann')}>
+        <Image resizeMode="stretch" source={require('../img/TitleMinLeguesV.jpeg')} style={styles.image} />
       </TouchableOpacity>
     </View>
   );
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ArmyGreyKnigtsScreen;
+export default ArmyLegueVotannScreen;

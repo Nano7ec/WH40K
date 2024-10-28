@@ -18,14 +18,20 @@ const HomeScreen = ({ navigation }) => {
       {/*Pantalla 1*/}
       {/* Botón para navegar a Grey Knights */}
       <TouchableOpacity onPress={() => navigation.navigate('ArmyGreyKnights')}>
-      <Image resizeMode="stretch" source={require('../img/GreyKnightss.png')} style={styles.image} />
+      <Image resizeMode="stretch" source={require('../img/CoverGreyKnights.jpeg')} style={styles.image} />
     </TouchableOpacity>
     {/* Botón para navegar a Grey Knights */}
     <TouchableOpacity onPress={() => navigation.navigate('ArmyImperialAgents')}>
-      <Image resizeMode="stretch" source={require('../img/GreyKnightss.png')} style={styles.image} />
+      <Image resizeMode="stretch" source={require('../img/CoverImperialA.jpeg')} style={styles.image} />
     </TouchableOpacity>
     <TouchableOpacity onPress={() => navigation.navigate('ArmyImperialGuard')}>
-      <Image resizeMode="stretch" source={require('../img/GreyKnightss.png')} style={styles.image} />
+      <Image resizeMode="stretch" source={require('../img/CoverImperialGuard.jpeg')} style={styles.image} />
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('ArmyTauEmpire')}>
+      <Image resizeMode="stretch" source={require('../img/CoverTauE.jpeg')} style={styles.image} />
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('ArmyLegueVotann')}>
+      <Image resizeMode="stretch" source={require('../img/CoverLeguesV.jpeg')} style={styles.image} />
     </TouchableOpacity>
     </ScrollView>
   );

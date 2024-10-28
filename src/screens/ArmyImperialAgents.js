@@ -9,13 +9,13 @@ const ArmyImperialAgentsScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <TouchableOpacity onPress={() => navigation.navigate('Tyranids')}>
-        <Image resizeMode="stretch" source={require('../img/Tyranids.png')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('ImperialAgent')}>
+        <Image resizeMode="stretch" source={require('../img/TitleImperialAgentArmyRule.png')} style={styles.image} />
       </TouchableOpacity>
 
       {/* Imagen que navega a la pantalla ArmyTyranid */}
-      <TouchableOpacity onPress={() => navigation.navigate('minTyra')}>
-        <Image resizeMode="stretch" source={require('../img/MinT.png')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('MinImperialA')}>
+        <Image resizeMode="stretch" source={require('../img/TitleMinImperialA.jpeg')} style={styles.image} />
       </TouchableOpacity>
     </View>
   );
