@@ -169,7 +169,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------------------------------------------------------------------*/}
+{/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -187,7 +187,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------------------------------------------------------------------*/}
+{/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -205,7 +205,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------------------------------------------------------------------*/}
+{/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -223,7 +223,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------------------------------------------------------------------*/}
+{/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -241,7 +241,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------------------------------------------------------------------*/}
+{/**---------------------------------------------------------------------------------------*/}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -269,20 +269,7 @@ const MiniBloodAngelsScreen = () => {
                     resizeMode="stretch"  // Se ajusta sin recortar la imagen
                 />
             </View>
-            {/**ENCABEZADO DE LA TABLA */}
-            <View style={{flexDirection: 'row', // Alinear elementos en fila
-            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
-                <>
-                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
-                alignItems: 'center', // Centra el contenido horizontalmente
-                justifyContent: 'center', // Centra el contenido verticalmente
-                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
-                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}> Habilidades</Text>
-                </View>
-                </>
-            </View>
-            {/**FIN ENCABEZADO DE LA TABLA */}
-            {/**---------------------------ARMAS A DISTANCIA---------------------------------------------- */}
+{/**---------------------------ARMAS A DISTANCIA---------------------------------------------- */}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
                 <>
@@ -389,7 +376,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------ARMAS CUERPO A CUERPO----------------------------------------- */}
+{/**---------------------------ARMAS CUERPO A CUERPO----------------------------------------- */}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
                 <>
@@ -454,7 +441,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**------------------------------------------------------------------------- */}
+{/**------------------------------------------------------------------------- */}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
             <>
@@ -496,7 +483,7 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-            {/**---------------------------ARMAS A DISTANCIA---------------------------------------------- */}
+{/**---------------------------HABILIDADES----------------------------------------- */}
             <View style={{flexDirection: 'row', // Alinear elementos en fila
             borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
                 <>
@@ -504,15 +491,95 @@ const MiniBloodAngelsScreen = () => {
                 alignItems: 'center', // Centra el contenido horizontalmente
                 justifyContent: 'center', // Centra el contenido verticalmente
                 padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
-                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase'}}> Habilidades</Text>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>HABILIDADES</Text>
                 </View>
                 </>
             </View>
-            {/**FIN CUERPO DE LA TABLA */}
-            <View>
-            {/**ASTORATH */}
-                
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Nucleo:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Despliegue rápido, Líder</Text>
+                </View>
+            </>
             </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>FACCIONES:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Juramento del Momento</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Redentor de los Perdidos:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Mientras este modelo lidere una unidad, cada vez que un modelo de esa unidad sea destruido por un ataque cuerpo a cuerpo, si ese modelo no ha luchado en esta fase, tira un D6. Con un 4+, no lo retires del juego; el modelo destruido puede luchar después de que la unidad atacante haya terminado sus ataques, y luego es retirado.</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Masa de Perdición:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Una vez por batalla, cuando la unidad de este modelo realice un movimiento de carga, este modelo puede usar esta habilidad. Cuando lo haga, hasta el final del turno, las armas cuerpo a cuerpo equipadas por los modelos de esa unidad tienen la habilidad [HERIDAS DEVASTADORAS].</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------EXTRA----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>SALVACIÓN INVULNERABLE: 4+</Text>
+                </View>
+                </>
+            </View>
+{/**ASTORATH */}
         </ScrollView>
     );
 
