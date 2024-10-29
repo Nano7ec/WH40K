@@ -1,23 +1,16 @@
-{/**Nombre */ }
+{/**Nombres */ }
 <>
   {/**Imagenes */}
-  <Image resizeMode="stretch" style={styles.image} source={require('../img/WingedHiveTyrant.png')} />
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Raveners.png')} />
 
   {/**Tabla de habilidades */}
   <Text style={styles.border}>
     Habilidades
   </Text>
   <Text style={styles.descrip}>
-    <Text style={styles.wapo}>Core:</Text>Deadly Demise D3, Deep Strike
-    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Shadow in the Warp, Synapse
-    {'\n'}<Text style={styles.wapo}>Voluntad de la Mente Colmena:</Text> Una vez por turno, una unidad Tiránida en un radio de 12" de una o más miniaturas con esta habilidad.
-    {'\n'} objetivo con una Estratagema por 0 PJ, incluso si otra unidad de tu ejército ya ha sido objetivo con esa Estratagema esta fase.
-    {'\n'}<Text style={styles.wapo}>Paroxismo (Psíquico):</Text> Al inicio de la fase de combate, puedes seleccionar una unidad enemiga a 12" o menos y visible para esta miniatura y tirar un D6: con un 1, este Psyker sufre D3 heridas mortales; con un 2+, hasta el final de la fase, resta 1 al atributo Attacks de las armas equipadas por las miniaturas de esa unidad.
-  </Text>
-
-  {/**Invulnerabilidad */}
-  <Text style={styles.border}>
-    Invulnerable Save    4+
+    <Text style={styles.wapo}>Core:</Text>Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Death From Below:</Text> Al final del turno de tu oponente, si esta unidad unidad no está dentro del Alcance de Combate de una o más unidades enemigas, puedes retirarla del campo de batalla y ponerla en Reservas Estratégicas.
   </Text>
 
   {/* Cabecera de la tabla daño distancia */}
@@ -54,22 +47,22 @@
         <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>36"</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>D3"</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2+"</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
-      </View>
-      <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
+        <Text style={styles.cellText}>12"</Text>
       </View>
       <View style={styles.tableCell}>
         <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
       </View>
     </>
   </View>
@@ -111,41 +104,33 @@
         <Text style={styles.cellText}>meele</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>6</Text>
+        <Text style={styles.cellText}>7</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>2</Text>
+        <Text style={styles.cellText}>3+</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>9</Text>
+        <Text style={styles.cellText}>5</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>-2</Text>
+        <Text style={styles.cellText}>-1</Text>
       </View>
       <View style={styles.tableCell}>
-        <Text style={styles.cellText}>3</Text>
+        <Text style={styles.cellText}>1</Text>
       </View>
     </>
   </View>
   <>
 
-{/**Reglas extras */}
-<Text style={styles.border}>
-      Composicion de la min
-    </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.</Text>
-
  {/**Composicion de las unidades */}
  <Text style={styles.border}>
       Composicion de la min
     </Text>
-    <Text style={styles.descrip}>■ 1 WingedHiveTyrant.
-      {'\n'}Este modelo va equipado con: espada de huesos monstruosa y látigo azotador; garras de tirano.
-      {'\n'}10 models .........................................................75 pts
-      {'\n'}20 models ........................................................150 pts
+    <Text style={styles.descrip}>■ 3-6 Raveners
+    {'\n'}Every model is equipped with: Ravener claws and talons.
+      {'\n'}3 models ............................................................75 pts
+      {'\n'}6 models ..........................................................150 pts
       </Text>
 
   </>
 </>
-
