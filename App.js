@@ -21,7 +21,7 @@ import ArmyWorldEatersScreen from './src/screens/ArmyWorldEaters';
 import WorldEatersRulesScreen from './src/screens/WorldEatersRules';
 import ArmyThousandSonsScreen from './src/screens/ArmyThousandSons';
 import ThousandSonsRulesScreen from './src/screens/ThousandSonsRules';
-import MinAdepta from './src/screens/minAdepta';
+import MinAdeptaScreen from './src/screens/MinAdeptaInfo';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,7 +49,7 @@ export default function App() {
         <Stack.Screen name='WorldEatersRules' component={WorldEatersRulesScreen} options={{title: 'World Eaters'}}/>
         <Stack.Screen name='ArmyThousandSons' component={ArmyThousandSonsScreen} options={{title: 'World Eaters'}}/>
         <Stack.Screen name='ThousandSonsRules' component={ThousandSonsRulesScreen} options={{title: 'World Eaters'}}/>
-        <Stack.Screen name='Miniaturas Adepta' component={MinAdepta} options={{title: 'Miniaturas Adepta'}}/>
+        <Stack.Screen name='MinAdeptaInfo' component={MinAdeptaScreen} options={{title: 'Miniaturas adepta'}}/>
   
       </Stack.Navigator>
     </NavigationContainer>

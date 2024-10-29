@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 const { width } = Dimensions.get("window");
-const MinAdepta = () => {
+const MinAdeptaScreen = () => {
   return (
     <ScrollView>
         <>
@@ -409,4 +409,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MinAdepta;
+export default MinAdeptaScreen;
