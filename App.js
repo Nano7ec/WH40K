@@ -21,9 +21,8 @@ import SpaceMarines from './src/screens/SpaceMarine';
 import ArmyOrksScreen from './src/screens/ArmyOrks';
 import OrksScreen from './src/screens/Orks';
 //Space marine
-import ArmyOrksScreen from './src/screens/ArmySpaceW';
-import OrksScreen from './src/screens/SpaceWolf';
 import SpaceWolvesScreen from './src/screens/SpaceWolf';
+import ArmySpaceWScreen from './src/screens/ArmySpaceW';
 
 
 const Stack = createNativeStackNavigator();
@@ -49,13 +48,11 @@ export default function App() {
         <Stack.Screen name="ArmySpaceMarine" component={ArmySpaceMarineScreen} options={{ title: 'Space marine' }} />
         <Stack.Screen name="SpaceMarine" component={SpaceMarines} options={{ title: 'Space marine' }} />
         {/**Orks */}
-        <Stack.Screen name="ArmyOrks" component={ArmyOrksScreen} options={{ title: 'Space marine' }} />
-        <Stack.Screen name="Orks" component={OrksScreen} options={{ title: 'Space marine' }} />
+        <Stack.Screen name="ArmyOrks" component={ArmyOrksScreen} options={{ title: 'ArmyOrks' }} />
+        <Stack.Screen name="Orks" component={OrksScreen} options={{ title: 'Orks' }} />
          {/**Space wolf */}
-         <Stack.Screen name="ArmySpace wolf" component={ArmySpaceWScreen} options={{ title: 'Space Wolf' }} />
-        <Stack.Screen name="Space wolf" component={SpaceWolvesScreen} options={{ title: 'Space marine' }} />
-
-      
+         <Stack.Screen name="ArmySpace wolf" component={ArmySpaceWScreen} options={{ title: 'Army Space Wolf' }} />
+        <Stack.Screen name="Space wolf" component={SpaceWolvesScreen} options={{ title: 'Space wolf' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

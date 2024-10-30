@@ -3347,7 +3347,7 @@ OPCIONES DE EQUIPO
 {/**Psychophage */ }
 <>
   {/**Imagenes */}
-  <Image resizeMode="stretch" style={styles.image} source={require('../img/Psychophage.png')} />
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/psychopage.png')} />
 
   {/**Tabla de habilidades */}
   <Text style={styles.border}>
@@ -4025,6 +4025,318 @@ OPCIONES DE EQUIPO
     <Text style={styles.descrip}>■ 1 Screamer-Killer
 {'\n'}This model is equipped with: bio-plasmic scream; 
 Screamer-Killer talons.
+      {'\n'}3 models ............................................................75 pts
+      {'\n'}6 models ..........................................................150 pts
+      </Text>
+
+  </>
+</>
+
+{/**Sporemines */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Sporemines.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Bio-minefield:</Text> Las unidades enemigas no pueden iniciar o finalizar un movimiento de Avance a 6» o menos de esta unidad.
+    {'\n'}<Text style={styles.wapo}>Floating Death:</Text>
+    {'\n'} Cada vez que una unidad enemiga termine un movimiento a 3« o menos de una miniatura de esta unidad, y cada vez que una miniatura de esta unidad termine un movimiento a 3» o menos de una unidad enemiga, tira un D6: con un 2-5, esa unidad enemiga sufre 1 herida mortal; con un 6, esa unidad enemiga sufre D3 heridas mortales. La miniatura de esta unidad que causó esa tirada es destruida.
+  </Text>
+
+  <>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 3-6 Spore Mines
+    Every model is equipped with: nothing.
+      {'\n'}3 models ............................................................50 pts
+      {'\n'}6 models ..........................................................100 pts
+      </Text>
+
+  </>
+</>
+
+{/**Sporcyst */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Sporcyst.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly demise D3
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Seed Mucolids:</Text> En tu fase de Disparo, cada vez que esta miniatura sea seleccionada para disparar, puede usar esta habilidad en vez de efectuar ataques con sus armas a distancia. 
+    {'\n'}Si lo hace, puedes añadir una nueva unidad de Mucolid Spores que contenga 1 miniatura a tu ejército e instalarla en cualquier punto del campo de batalla que esté a 18« o menos de esta miniatura pero a más de 9» en horizontal de todas las unidades enemigas.
+    
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Sporocyst bio-weapons [HIVE DEFENCES]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>24"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+    </>
+  </View>
+  <Text style={styles.descrip}>
+    {'\n'}<Text style={styles.wapo}>Hive Defences:</Text> Cada vez que una unidad enemiga se despliegue o termine un movimiento Normal, Avance o Retroceso dentro del alcance de esta arma, si esa unidad enemiga es un objetivo elegible, el portador puede disparar con esta arma a esa unidad como si fuera tu fase de Disparo (el portador puede hacerlo hasta cuatro veces por fase).
+    
+  </Text>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Flensing whips </Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>6</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 1 Sporocyst
+{'\n'}This model is equipped with: Sporocyst bio-weapons; 
+flensing whips.
+      {'\n'}1 model ............................................................145 pts
+      </Text>
+
+  </>
+</>
+
+{/**Termagants */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Termagants.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deep Strike
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
+    {'\n'}<Text style={styles.wapo}>Death From Below:</Text> Al final del turno de tu oponente, si esta unidad unidad no está dentro del Alcance de Combate de una o más unidades enemigas, puedes retirarla del campo de batalla y ponerla en Reservas Estratégicas.
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Heavy venom cannon [BLAST]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>12"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>7</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>-1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 3-6 Raveners
+    {'\n'}Every model is equipped with: Ravener claws and talons.
       {'\n'}3 models ............................................................75 pts
       {'\n'}6 models ..........................................................150 pts
       </Text>
