@@ -3123,7 +3123,1163 @@ const MiniBloodAngelsScreen = () => {
                 </View>
             </>
             </View>
-{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* BIBLIOTECARIO JEFE MEPHISTON* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
+{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* BIBLIOTECARIO JEFE MEPHISTON *-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
+
+
+{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* COMANDANTE DANTE *-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
+<View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{ alignItems: 'center', marginVertical: 10 }}>
+                <Image 
+                    source={require('../img/blood_angels/comandante_dante.png')}
+                    style={styles.image}
+                    resizeMode="stretch"  // Se ajusta sin recortar la imagen
+                />
+            </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Dante surca el campo de batalla, resplandeciente en su armadura dorada, antes de lanzarse a la sangrienta batalla con estelas de fuego. Una vez en la refriega, la penetrante mirada de su máscara de muerte congela a los enemigos de miedo, mientras que sus golpes perfectamente dirigidos con el Hacha Mortalis derriban a sus enemigos uno tras otro.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------ARMAS A DISTANCIA---------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}> ARMAS A DISTANCIA</Text>
+                </View>
+                </>
+            </View>
+            {/**CUERPO DE LA TABLA */}
+            {/** 1 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Perdición [MELTA 2, PISTOLA, IMPACTOS SOSTENIDOS D3]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>BS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>6"</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>1</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>2+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>8</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-4</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D6</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------ARMAS CUERPO A CUERPO----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>ARMAS CUERPO A CUERPO</Text>
+                </View>
+                </>
+            </View>
+            {/**CUERPO DE LA TABLA */}
+            {/** 1 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>El Hacha Mortalis [IMPACTOS LETALES]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>WS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Cuerpo a cuerpo</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>8</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>2+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>7</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-3</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>2</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------HABILIDADES----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>HABILIDADES</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+ <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>NÚCLEO:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Despliegue Rápido, Líder</Text>
+                </View>
+            </>
+            </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>FACCIÓN:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Juramento del Momento</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Regente del Imperium Nihilus:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Mientras este modelo esté liderando una unidad, suma 1 a las tiradas de Carga realizadas para esa unidad y, cada vez que un modelo en esa unidad realice un ataque, suma 1 a la tirada de Impacto.
+                    </Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Máscara de Muerte de Sanguinius:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Al inicio de la fase de Combate, cada unidad enemiga a 6" de este modelo debe realizar una prueba de Moral, restando 1 a esa prueba cuando la realicen.</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+{/**---------------------------EXTRA----------------------------------------- */}
+<View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>SALVACIÓN INVULNERABLE: 4+</Text>
+                </View>
+                </>
+            </View>
+{/**---------------------------OPCIONES DE EQUIPO----------------------------------------- */}
+<View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>OPCIONES DE EQUIPO</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>↕Ninguna</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------COMPOSICIÓN DE LA UNIDAD----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>COMPOSICIÓN DE LA UNIDAD</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>1 Commander Dante – Héroe Épico</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Este modelo está equipado con: Perdición; el Hacha Mortalis.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------LIDER----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>LÍDER</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Este modelo puede unirse a las siguientes unidades:
+                        {"\n"} ¶ Escuadra de Asalto con Mochilas de Salto
+                        {"\n"} ¶ Guardia Sanguinaria
+                        {"\n"} ¶ Escuadra de Veteranos Vanguardistas con Mochilas de Salto
+                    </Text>
+                </View>
+            </>
+            </View>
+{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* COMANDANTE DANTE *-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
+
+
+{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* DEATH COMPANY DREADNOUGHT
+ *-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
+<View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{ alignItems: 'center', marginVertical: 10 }}>
+                <Image 
+                    source={require('../img/blood_angels/compañia_de_la_muerte.png')}
+                    style={styles.image}
+                    resizeMode="stretch"  // Se ajusta sin recortar la imagen
+                />
+            </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Ni siquiera ser encerrado en el sarcófago de un Dreadnought es suficiente para mantener a raya la Rabia Negra. Los Dreadnoughts de la Compañía de la Muerte son como arietes furiosos, ansiosos por embestir al enemigo y destrozarlos. Son armas de terror muy potentes, desatadas para causar el mayor daño posible.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------ARMAS A DISTANCIA---------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}> ARMAS A DISTANCIA</Text>
+                </View>
+                </>
+            </View>
+            {/**CUERPO DE LA TABLA */}
+            {/** 1 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Llama pesada [IGNORA COBERTURA, TORRENTE]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>BS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>12"</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D6</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>N/A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>5</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-1</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>1</Text>
+                </View>
+            </>
+            </View>
+            {/** 2 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Fusil de fusión [MELTA 2]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>BS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>12"</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>1</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>9</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-4</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D6</Text>
+                </View>
+            </>
+            </View>
+            {/** 2 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Bólter de tormenta [FUEGO RÁPIDO 2]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>BS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>24"</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>2</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>4</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>0</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>1</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------ARMAS CUERPO A CUERPO----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>ARMAS CUERPO A CUERPO</Text>
+                </View>
+                </>
+            </View>
+            {/**CUERPO DE LA TABLA */}
+            {/** 1 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Garras de Sangre [GEMELO]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>WS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Cuerpo a cuerpo</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>7</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>8</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-2</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3</Text>
+                </View>
+            </>
+            </View>
+            {/** 2 */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 16, color: '#fff'}}>Puños Gemelos de Furioso [GEMELO]</Text>
+                </View>
+            </>
+            </View>
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Alcance</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>A</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>WS</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+                </View>
+            </>
+            </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Cuerpo a cuerpo</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>5</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3+</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>12</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>-3</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>3</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------HABILIDADES----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>HABILIDADES</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+ <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>NÚCLEO:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Destrucción Mortal 1, No Sienten Dolor 6+</Text>
+                </View>
+            </>
+            </View>
+{/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>FACCIÓN:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Juramento del Momento</Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Rabia Negra:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Cada vez que este modelo haga un ataque, puedes repetir la tirada de Impacto. Mientras este modelo no esté a 12" de uno o más modelos amigos de Capellán, no puede seleccionarse para Retirarse y su característica de Control de Objetivo es 0.
+                    </Text>
+                </View>
+            </>
+            </View>
+            {/**------------------------------------------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Represalia Frenética:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>Cada vez que una unidad enemiga ataque a este modelo, después de que esa unidad haya terminado sus ataques, este modelo puede disparar como si fuera tu fase de Disparo o combatir como si fuera la fase de Combate.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------HABILIDADES DE EQUIPO----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>HABILIDADES DE EQUIPO</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+ <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Magna-grappler:</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 14, color: '#fff'}}>El portador pierde la palabra clave de Humo, pero añade 2 a las tiradas de Carga realizadas para el portador si uno o más de los objetivos de esa carga es una unidad de Monstruo o Vehículo.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------OPCIONES DE EQUIPO----------------------------------------- */}
+<View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>OPCIONES DE EQUIPO</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}> ↕ El bólter de tormenta de este modelo puede ser reemplazado por 1 llama pesada.
+                        {"\n"} ↕ El fusil de fusión de este modelo puede ser reemplazado por 1 llama pesada.
+                        {"\n"} ↕ Los puños de Furioso de este modelo pueden ser reemplazados por 1 par de garras de sangre.
+                        {"\n"} ↕ Este modelo puede estar equipado con 1 magna-grappler.
+                    </Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------COMPOSICIÓN DE LA UNIDAD----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>COMPOSICIÓN DE LA UNIDAD</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>1 Death Company Dreadnought</Text>
+                </View>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Este modelo está equipado con: fusil de fusión; bólter de tormenta; puños gemelos de Furioso.</Text>
+                </View>
+            </>
+            </View>
+{/**---------------------------LIDER----------------------------------------- */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',}}>
+                <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10}}>
+                    <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 16}}>LÍDER</Text>
+                </View>
+                </>
+            </View>
+ {/**CUERPO DE LA TABLA */}
+            <View style={{flexDirection: 'row', // Alinear elementos en fila
+            borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}}>
+            <>
+                <View style={{flex: 1, // Distribuye equitativamente el espacio entre columnas
+                alignItems: 'center', // Centra el contenido horizontalmente
+                justifyContent: 'center', // Centra el contenido verticalmente
+                padding: 5}}>
+                    <Text style={{fontSize: 13, color: '#fff'}}>Este modelo puede unirse a las siguientes unidades:
+                        {"\n"} ¶ Escuadra de Asalto con Mochilas de Salto
+                        {"\n"} ¶ Guardia Sanguinaria
+                        {"\n"} ¶ Escuadra de Veteranos Vanguardistas con Mochilas de Salto
+                    </Text>
+                </View>
+            </>
+            </View>
+{/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* DEATH COMPANY DREADNOUGHT
+ *-*-*-*-*-*-*-*-*-*-*-*-*-*  */}
 
 
 
