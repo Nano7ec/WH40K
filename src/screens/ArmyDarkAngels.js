@@ -9,6 +9,14 @@ const ArmyDarkAngels = ({ navigation }) => {
       <Pressable onPress={() => navigation.navigate('DarkAngelsRules')}>
         <Image resizeMode="stretch" source={require('../img/DarkAngelsRules.png')} style={styles.image} />
       </Pressable>
+      
+      <Pressable onPress={() => navigation.navigate("MiniDarkAngels")}>
+        <Image
+          resizeMode="stretch"
+          source={require("../img/MiniDarkAngels.png")}
+          style={styles.image}
+        />
+      </Pressable>
     </View>
   );
 };
