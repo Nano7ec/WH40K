@@ -4217,9 +4217,206 @@ flensing whips.
     Habilidades
   </Text>
   <Text style={styles.descrip}>
-    <Text style={styles.wapo}>Core:</Text>Deep Strike
     {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
-    {'\n'}<Text style={styles.wapo}>Death From Below:</Text> Al final del turno de tu oponente, si esta unidad unidad no está dentro del Alcance de Combate de una o más unidades enemigas, puedes retirarla del campo de batalla y ponerla en Reservas Estratégicas.
+    {'\n'}<Text style={styles.wapo}>Skulking Horrors:</Text> Una vez por turno, cuando una unidad enemiga termina un movimiento Normal, de Avance o de Retroceso a 9« o menos de esta unidad, si esta unidad no está dentro del Alcance de Combate de una o más unidades enemigas, puede hacer un movimiento Normal de hasta D6".
+  </Text>
+
+  {/* Cabecera de la tabla daño distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AD</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Fleshborer [ASSAULT]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>18"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>5</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Termagant spinefists [ASSAULT, PISTOL, TWIN-LINKED]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>12"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla de armas distancia */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Termagant devourer</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>18"</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>2</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+
+  {/* Cabecera de la tabla daño cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>ACC</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>R</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>A</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>BS</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>S</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>AP</Text>
+      </View>
+      <View style={styles.tableCelltop}>
+        <Text style={styles.headerText}>D</Text>
+      </View>
+    </>
+  </View>
+  {/* Filas de la tabla armas cuerpo a cuerpo */}
+  <View style={styles.tableRow}>
+    <>
+      <View style={styles.tableCell}>
+
+        <Text style={styles.cellText}><Text style={styles.wapo}>Monstrous bonesword and lash whip [TWIN-LINKED]</Text></Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>meele</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>4+</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>3</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>0</Text>
+      </View>
+      <View style={styles.tableCell}>
+        <Text style={styles.cellText}>1</Text>
+      </View>
+    </>
+  </View>
+  <>
+
+ {/**Composicion de las unidades */}
+ <Text style={styles.border}>
+      Opciones de equipo
+    </Text>
+    <Text style={styles.descrip}>■ Todas las miniaturas de esta unidad pueden reemplazar a su fleshborer por 1 Termagant devourer.
+      {'\n'}■ Todas las miniaturas de esta unidad pueden reemplazar su fleshborer por 1 Termagant spinefists.
+      </Text>
+ <Text style={styles.border}>
+      Composicion de la min
+    </Text>
+    <Text style={styles.descrip}>■ 10-20 Termagants
+{'\n'}Todos los modelos tienen equipado: fleshborer; xenos claws 
+and teeth.
+      {'\n'}10 models .........................................................60 pts
+      {'\n'}20 models .......................................................120 pts
+      </Text>
+
+  </>
+</>
+
+{/**Tervigon */ }
+<>
+  {/**Imagenes */}
+  <Image resizeMode="stretch" style={styles.image} source={require('../img/Tervigon.png')} />
+
+  {/**Tabla de habilidades */}
+  <Text style={styles.border}>
+    Habilidades
+  </Text>
+  <Text style={styles.descrip}>
+    <Text style={styles.wapo}>Core:</Text>Deadly demise D6
+    {'\n'}<Text style={styles.wapo}>Faccion:</Text>Shadow in the Warp, Synapse
+    {'\n'}<Text style={styles.wapo}>Spawn Termagants:</Text> Al final del turno de tu oponente, si esta unidad unidad no está dentro del Alcance de Combate de una o más unidades enemigas, puedes retirarla del campo de batalla y ponerla en Reservas Estratégicas.
   </Text>
 
   {/* Cabecera de la tabla daño distancia */}
