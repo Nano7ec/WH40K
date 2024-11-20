@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, ScrollView,} from 'react-native';
 
-const GreyKnightScreen = () => {
+const ImperialKnightScreen = () => {
 
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#E5E6E8', padding: 5 }}>
@@ -195,4 +195,4 @@ const GreyKnightScreen = () => {
             </Text> */
 //, paddingBottom: 25 para ponerlo en el final del codigo
 
-export default GreyKnightScreen;
+export default ImperialKnightScreen;

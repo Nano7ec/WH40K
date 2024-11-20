@@ -17,8 +17,8 @@ const HomeScreen = ({ navigation }) => {
       </TouchableOpacity>
       {/*Pantalla 1*/}
       {/* Botón para navegar a Grey Knights */}
-      <TouchableOpacity onPress={() => navigation.navigate('ArmyGreyKnights')}>
-      <Image resizeMode="stretch" source={require('../img/CoverGreyKnights.jpeg')} style={styles.image} />
+      <TouchableOpacity onPress={() => navigation.navigate('ArmyImperialKnights')}>
+      <Image resizeMode="stretch" source={require('../img/CoverImperialK.jpg')} style={styles.image} />
     </TouchableOpacity>
     {/* Botón para navegar a Grey Knights */}
     <TouchableOpacity onPress={() => navigation.navigate('ArmyImperialAgents')}>

@@ -3,7 +3,7 @@ import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-nat
 
 
 const { width } = Dimensions.get('window');
-const MinGreyK = () => {
+const MinImperialRey = () => {
   return (
     <ScrollView>
       <>
@@ -2428,4 +2428,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MinGreyK;
+export default MinImperialRey;

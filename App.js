@@ -6,9 +6,6 @@ import BasicRuleScreen from './src/screens/BasicRule';
 import ArmyTyranidScreen from './src/screens/ArmyTyranid';
 import TyranidsScreen from './src/screens/Tyranids';
 import MinTyraScreen from './src/screens/minTyra';
-import	ArmyGreyKnights from './src/screens/ArmyGreyKnights';
-import GreyKnight from './src/screens/GreyKnight';
-import minGreyKScreen from './src/screens/minGreyK';
 import ArmyImperialAgentsScreen from './src/screens/ArmyImperialAgents';
 import ImperialAgent from './src/screens/ImperialAgent';
 import MinImperialA from './src/screens/minImperialA';
@@ -21,6 +18,9 @@ import TauEmpire from './src/screens/TauEmpire';
 import MinLeguesVotann from './src/screens/minLeguesVotann';
 import ArmyLegueVotannScreen from './src/screens/ArmyLegueVotann';
 import LegueVotann from './src/screens/LegueVotann';
+import ArmyImperialKnightsScreen from './src/screens/ArmyImperialKnights';
+import ImperialKnightScreen from './src/screens/ImperialKnight';
+import MinImperialRey from './src/screens/MinImperialRey';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -32,9 +32,9 @@ export default function App() {
         <Stack.Screen name="ArmyTyranid" component={ArmyTyranidScreen} options={{ title: 'Army Tyranid' }} />
         <Stack.Screen name="Tyranids" component={TyranidsScreen} options={{ title: 'Tyranids' }} />
         <Stack.Screen name="minTyra" component={MinTyraScreen} options={{ title: 'Min Tyra' }} />
-        <Stack.Screen name="ArmyGreyKnights" component={ArmyGreyKnights} options={{ title: 'Army Grey Knights' }} />
-        <Stack.Screen name="GreyKnight" component={GreyKnight} options={{ title: 'Grey Knight' }} />
-        <Stack.Screen name="MinGreyK" component={minGreyKScreen} options={{ title: 'Min Grey Knights' }} />
+        <Stack.Screen name="ArmyImperialKnights" component={ArmyImperialKnightsScreen} options={{ title: 'Army Imperial Knights' }} />
+        <Stack.Screen name="ImperialKnight" component={ImperialKnightScreen} options={{ title: 'Imperial Knight' }} />
+        <Stack.Screen name= "MinImperialRey" component={MinImperialRey} options={{title: 'Min Imperial Knight' }}/>
         <Stack.Screen name="ArmyImperialAgents" component={ArmyImperialAgentsScreen} options={{title: 'Army Imperial Agents'}}/>
         <Stack.Screen name="ImperialAgent" component={ImperialAgent} options={{title: 'Imperial Agents'}} />
         <Stack.Screen name="MinImperialA" component={MinImperialA} options={{title: 'Min Imperial Agents'}} />
